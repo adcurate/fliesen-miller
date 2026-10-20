@@ -1,0 +1,114 @@
+[
+  {
+    "id": "gallery-01",
+    "title": "Badezimmer",
+    "alt": "Bad mit dunklen großformatigen Fliesen, Holzwaschtisch und rundem Spiegel",
+    "width": 1440,
+    "height": 1920,
+    "category": "premium"
+  },
+  {
+    "id": "gallery-02",
+    "title": "WC",
+    "alt": "Gäste-WC mit dunklem Fliesenspiegel und wandhängender Toilette",
+    "width": 1440,
+    "height": 1920,
+    "category": "premium"
+  },
+  {
+    "id": "gallery-03",
+    "title": "Badezimmer",
+    "alt": "Bad mit bodengleicher Dusche, dunklen Fliesen und Holzwaschtisch",
+    "width": 1920,
+    "height": 1440,
+    "category": "premium"
+  },
+  {
+    "id": "gallery-04",
+    "title": "Flur",
+    "alt": "Wohnflur mit dunklen Bodenfliesen und gläserner Raumtrennung",
+    "width": 1920,
+    "height": 1440,
+    "category": "boden"
+  },
+  {
+    "id": "gallery-05",
+    "title": "Spa-Bereich",
+    "alt": "Badezimmer mit integrierter Sauna und freistehender Badewanne",
+    "width": 1920,
+    "height": 1440,
+    "category": "premium"
+  },
+  {
+    "id": "gallery-06",
+    "title": "BAD",
+    "alt": "Dunkel gefliestes Badezimmer mit Doppelwaschtisch und beleuchtetem Spiegel",
+    "width": 1920,
+    "height": 1440,
+    "category": "premium"
+  },
+  {
+    "id": "gallery-07",
+    "title": "Bad 2",
+    "alt": "Bad mit freistehender Wanne, dunklem Boden und viel Tageslicht",
+    "width": 1920,
+    "height": 1440,
+    "category": "premium"
+  },
+  {
+    "id": "gallery-08",
+    "title": "Modernes Badezimmer mit modernem Design",
+    "alt": "Badezimmer mit dunklem Fliesenbereich und Fenster",
+    "width": 1024,
+    "height": 1536,
+    "category": "bad"
+  },
+  {
+    "id": "gallery-09",
+    "title": "Unfertig gestaltetes modernes Badezimmer",
+    "alt": "Badezimmer im Ausbau mit großformatigen dunklen Fliesen",
+    "width": 1536,
+    "height": 1024,
+    "category": "bad"
+  },
+  {
+    "id": "gallery-10",
+    "title": "Minimalist Badezimmer mit natürlichem Licht (1)",
+    "alt": "Helles Badezimmer mit hellen Bodenfliesen und Wand-WC",
+    "width": 1024,
+    "height": 1536,
+    "category": "bad"
+  },
+  {
+    "id": "gallery-11",
+    "title": "Moderner Badezimmerbereich mit Doppelwaschbecken",
+    "alt": "Helles Badezimmer mit Doppelwaschtisch und Handtuchheizkörper",
+    "width": 1024,
+    "height": 1536,
+    "category": "bad"
+  },
+  {
+    "id": "gallery-12",
+    "title": "Moderne Dachboden-Badezimmeransicht",
+    "alt": "Dachgeschossbad mit grauen Fliesen und Wand-WC",
+    "width": 1024,
+    "height": 1536,
+    "category": "bad"
+  },
+  {
+    "id": "gallery-13",
+    "title": "Moderne Dachbodenbadezimmer mit Badewanne",
+    "alt": "Dachgeschossbad mit eingebauter Wanne und grauen Fliesen",
+    "width": 1024,
+    "height": 1536,
+    "category": "bad"
+  },
+  {
+    "id": "gallery-14",
+    "title": "Modernes Badezimmer mit Fliesendesign",
+    "alt": "Bad mit gemustertem Boden, Bidet und Holzwaschtisch",
+    "width": 1024,
+    "height": 1536,
+    "category": "bad"
+  }
+]

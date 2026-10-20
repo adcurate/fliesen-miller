@@ -1,0 +1,244 @@
+[
+  {
+    "filename": "gallery-01.jpg",
+    "url": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-bathroom.jpg",
+    "title": "Badezimmer",
+    "alt": "Modernes Badezimmer mit hochwertigen Fliesen",
+    "source": "Existing public website gallery",
+    "sort_order": 0,
+    "width": 1440,
+    "height": 1920,
+    "verified_visual_alt": "Bad mit dunklen großformatigen Fliesen, Holzwaschtisch und rundem Spiegel",
+    "note": "Source-provided titles/alt text are inconsistent in places; prefer verified_visual_alt."
+  },
+  {
+    "filename": "gallery-02.jpg",
+    "url": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-wc.jpg",
+    "title": "WC",
+    "alt": "Stilvolles WC mit Fliesenverlegung",
+    "source": "Existing public website gallery",
+    "sort_order": 1,
+    "width": 1440,
+    "height": 1920,
+    "verified_visual_alt": "Gäste-WC mit dunklem Fliesenspiegel und wandhängender Toilette",
+    "note": "Source-provided titles/alt text are inconsistent in places; prefer verified_visual_alt."
+  },
+  {
+    "filename": "gallery-03.jpg",
+    "url": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-floor.jpg",
+    "title": "Badezimmer",
+    "alt": "Professionell verlegte Bodenfliesen",
+    "source": "Existing public website gallery",
+    "sort_order": 2,
+    "width": 1920,
+    "height": 1440,
+    "verified_visual_alt": "Bad mit bodengleicher Dusche, dunklen Fliesen und Holzwaschtisch",
+    "note": "Source-provided titles/alt text are inconsistent in places; prefer verified_visual_alt."
+  },
+  {
+    "filename": "gallery-04.jpg",
+    "url": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-detail.jpg",
+    "title": "Flur",
+    "alt": "Fliesendetail in Nahaufnahme",
+    "source": "Existing public website gallery",
+    "sort_order": 3,
+    "width": 1920,
+    "height": 1440,
+    "verified_visual_alt": "Wohnflur mit dunklen Bodenfliesen und gläserner Raumtrennung",
+    "note": "Source-provided titles/alt text are inconsistent in places; prefer verified_visual_alt."
+  },
+  {
+    "filename": "gallery-05.jpg",
+    "url": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-kitchen.jpg",
+    "title": "Spa-Bereich",
+    "alt": "Küchenrückwand mit Fliesen",
+    "source": "Existing public website gallery",
+    "sort_order": 4,
+    "width": 1920,
+    "height": 1440,
+    "verified_visual_alt": "Badezimmer mit integrierter Sauna und freistehender Badewanne",
+    "note": "Source-provided titles/alt text are inconsistent in places; prefer verified_visual_alt."
+  },
+  {
+    "filename": "gallery-06.jpg",
+    "url": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-spa.jpg",
+    "title": "BAD",
+    "alt": "Spa-Bereich mit hochwertiger Fliesenarbeit",
+    "source": "Existing public website gallery",
+    "sort_order": 5,
+    "width": 1920,
+    "height": 1440,
+    "verified_visual_alt": "Dunkel gefliestes Badezimmer mit Doppelwaschtisch und beleuchtetem Spiegel",
+    "note": "Source-provided titles/alt text are inconsistent in places; prefer verified_visual_alt."
+  },
+  {
+    "filename": "gallery-07.jpg",
+    "url": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-bath2.jpg",
+    "title": "Bad 2",
+    "alt": "Weiteres Badezimmer-Projekt",
+    "source": "Existing public website gallery",
+    "sort_order": 6,
+    "width": 1920,
+    "height": 1440,
+    "verified_visual_alt": "Bad mit freistehender Wanne, dunklem Boden und viel Tageslicht",
+    "note": "Source-provided titles/alt text are inconsistent in places; prefer verified_visual_alt."
+  },
+  {
+    "filename": "gallery-08.png",
+    "url": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/0e743ad8-591a-4a1d-a384-87e242afa731.png",
+    "title": "Modernes Badezimmer mit modernem Design",
+    "alt": "",
+    "source": "Existing public website gallery",
+    "sort_order": 7,
+    "width": 1024,
+    "height": 1536,
+    "verified_visual_alt": "Badezimmer mit dunklem Fliesenbereich und Fenster",
+    "note": "Source-provided titles/alt text are inconsistent in places; prefer verified_visual_alt."
+  },
+  {
+    "filename": "gallery-09.png",
+    "url": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/7868a774-ec3f-4969-8345-da94e4ad4009.png",
+    "title": "Unfertig gestaltetes modernes Badezimmer",
+    "alt": "",
+    "source": "Existing public website gallery",
+    "sort_order": 9,
+    "width": 1536,
+    "height": 1024,
+    "verified_visual_alt": "Badezimmer im Ausbau mit großformatigen dunklen Fliesen",
+    "note": "Source-provided titles/alt text are inconsistent in places; prefer verified_visual_alt."
+  },
+  {
+    "filename": "gallery-10.png",
+    "url": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/a43779f2-33f9-4280-952f-f42985ba40b9.png",
+    "title": "Minimalist Badezimmer mit natürlichem Licht (1)",
+    "alt": "",
+    "source": "Existing public website gallery",
+    "sort_order": 10,
+    "width": 1024,
+    "height": 1536,
+    "verified_visual_alt": "Helles Badezimmer mit hellen Bodenfliesen und Wand-WC",
+    "note": "Source-provided titles/alt text are inconsistent in places; prefer verified_visual_alt."
+  },
+  {
+    "filename": "gallery-11.png",
+    "url": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/e62a5866-1a0e-4dfa-bf13-5d7cbb43c393.png",
+    "title": "Moderner Badezimmerbereich mit Doppelwaschbecken",
+    "alt": "",
+    "source": "Existing public website gallery",
+    "sort_order": 11,
+    "width": 1024,
+    "height": 1536,
+    "verified_visual_alt": "Helles Badezimmer mit Doppelwaschtisch und Handtuchheizkörper",
+    "note": "Source-provided titles/alt text are inconsistent in places; prefer verified_visual_alt."
+  },
+  {
+    "filename": "gallery-12.png",
+    "url": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/02e4b4ba-44ce-47e8-91e5-b6ce700477e8.png",
+    "title": "Moderne Dachboden-Badezimmeransicht",
+    "alt": "",
+    "source": "Existing public website gallery",
+    "sort_order": 12,
+    "width": 1024,
+    "height": 1536,
+    "verified_visual_alt": "Dachgeschossbad mit grauen Fliesen und Wand-WC",
+    "note": "Source-provided titles/alt text are inconsistent in places; prefer verified_visual_alt."
+  },
+  {
+    "filename": "gallery-13.png",
+    "url": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/743f89be-29aa-401b-a774-ac6913e0d25f.png",
+    "title": "Moderne Dachbodenbadezimmer mit Badewanne",
+    "alt": "",
+    "source": "Existing public website gallery",
+    "sort_order": 13,
+    "width": 1024,
+    "height": 1536,
+    "verified_visual_alt": "Dachgeschossbad mit eingebauter Wanne und grauen Fliesen",
+    "note": "Source-provided titles/alt text are inconsistent in places; prefer verified_visual_alt."
+  },
+  {
+    "filename": "gallery-14.png",
+    "url": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/7fc927f8-0b7d-4f29-866f-93db21df8b34.png",
+    "title": "Modernes Badezimmer mit Fliesendesign",
+    "alt": "",
+    "source": "Existing public website gallery",
+    "sort_order": 15,
+    "width": 1024,
+    "height": 1536,
+    "verified_visual_alt": "Bad mit gemustertem Boden, Bidet und Holzwaschtisch",
+    "note": "Source-provided titles/alt text are inconsistent in places; prefer verified_visual_alt."
+  },
+  {
+    "filename": "logo.png",
+    "url": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/branding/logo.png?v=1775239901619",
+    "title": "Fliesen Miller original logo",
+    "source": "Existing public website",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "filename": "hero-original.webp",
+    "url": "https://fliesen-miller.de/assets/hero-bg-DS3C8vCj.webp",
+    "title": "Original homepage hero image",
+    "source": "Existing public website",
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "filename": "header-logo.webp",
+    "url": "https://fliesen-miller.de/assets/header-logo-CYhVW_yx.webp",
+    "title": "Optimized original header logo",
+    "source": "Existing public website",
+    "width": 360,
+    "height": 240
+  },
+  {
+    "filename": "favicon.png",
+    "url": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/branding/favicon.png?v=1775241407260",
+    "title": "Original favicon",
+    "source": "Existing public website",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "filename": "inter-latin-400-normal-C38fXH4l.woff2",
+    "url": "https://fliesen-miller.de/assets/inter-latin-400-normal-C38fXH4l.woff2",
+    "title": "Local font file from original website",
+    "source": "Existing public website CSS"
+  },
+  {
+    "filename": "inter-latin-500-normal-Cerq10X2.woff2",
+    "url": "https://fliesen-miller.de/assets/inter-latin-500-normal-Cerq10X2.woff2",
+    "title": "Local font file from original website",
+    "source": "Existing public website CSS"
+  },
+  {
+    "filename": "inter-latin-600-normal-LgqL8muc.woff2",
+    "url": "https://fliesen-miller.de/assets/inter-latin-600-normal-LgqL8muc.woff2",
+    "title": "Local font file from original website",
+    "source": "Existing public website CSS"
+  },
+  {
+    "filename": "inter-latin-700-normal-Yt3aPRUw.woff2",
+    "url": "https://fliesen-miller.de/assets/inter-latin-700-normal-Yt3aPRUw.woff2",
+    "title": "Local font file from original website",
+    "source": "Existing public website CSS"
+  },
+  {
+    "filename": "dm-sans-latin-500-normal-B9HHJjqV.woff2",
+    "url": "https://fliesen-miller.de/assets/dm-sans-latin-500-normal-B9HHJjqV.woff2",
+    "title": "Local font file from original website",
+    "source": "Existing public website CSS"
+  },
+  {
+    "filename": "dm-sans-latin-700-normal-DvUfVpUG.woff2",
+    "url": "https://fliesen-miller.de/assets/dm-sans-latin-700-normal-DvUfVpUG.woff2",
+    "title": "Local font file from original website",
+    "source": "Existing public website CSS"
+  },
+  {
+    "filename": "dm-sans-latin-800-normal-C2H8778U.woff2",
+    "url": "https://fliesen-miller.de/assets/dm-sans-latin-800-normal-C2H8778U.woff2",
+    "title": "Local font file from original website",
+    "source": "Existing public website CSS"
+  }
+]

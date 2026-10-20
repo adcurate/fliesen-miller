@@ -1,0 +1,38 @@
+import type { CSSProperties } from "react";
+const paths: Record<string, React.ReactNode> = {
+  arrow: <><path d="M4 12h15M13 5l7 7-7 7"/></>,
+  arrowUp: <><path d="M5 19 19 5M5 5h14v14"/></>,
+  chevron: <path d="m6 9 6 6 6-6"/>,
+  check: <path d="m5 12 4 4L19 6"/>,
+  phone: <path d="M5 3h4l2 5-3 2a16 16 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2C10 21 3 14 3 5a2 2 0 0 1 2-2Z"/>,
+  mail: <><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 6 9 7 9-7"/></>,
+  pin: <><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></>,
+  house: <><path d="m3 11 9-8 9 8M5 10v11h14V10M9 21v-7h6v7"/></>,
+  repair: <><path d="m14 6 4 4M4 20l8-8M14 3a6 6 0 0 0-7 7l-4 4 7 7 4-4a6 6 0 0 0 7-7l-4 3-6-6 3-4Z"/></>,
+  tile: <><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 12h18M12 3v18"/></>,
+  layers: <><path d="m12 3 10 5-10 5L2 8l10-5Zm-10 9 10 5 10-5M2 16l10 5 10-5"/></>,
+  bath: <><path d="M3 12h18v4a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-4ZM5 12V5a2 2 0 0 1 4 0M6 20v2m12-2v2M8 6h4"/></>,
+  kitchen: <><path d="M3 10h18v11H3V10ZM5 10V4a2 2 0 0 1 4 0M3 15h18M12 15v6M15 7h4"/></>,
+  diamond: <><path d="M6 3h12l4 7-10 12L2 10l4-7ZM2 10h20M6 3l6 19 6-19"/></>,
+  premium: <><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7Z"/></>,
+  upload: <><path d="M12 16V3m-5 5 5-5 5 5M4 15v6h16v-6"/></>,
+  file: <><path d="M5 2h9l5 5v15H5V2Zm9 0v6h5M8 13h8m-8 4h6"/></>,
+  close: <path d="m6 6 12 12M6 18 18 6"/>,
+  clock: <><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></>,
+  instagram: <><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17 6.5h.01"/></>,
+  menu: <path d="M3 6h18M3 12h18M3 18h18"/>,
+  broom: <><path d="m15 3-4 8M7 10l9 4-4 8-9-4 4-8ZM5 16l9 4M9 15l-3 5"/></>,
+  calendar: <><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18m-13 5 3 3 5-5"/></>,
+  agreement: <><path d="M21 11a8 8 0 0 1-8 8H7l-4 3V11a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8Z"/><path d="m8 11 3 3 5-5"/></>,
+  clipboard: <><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="M9 11h6m-6 5h6"/></>,
+  map: <><path d="m3 5 6-3 6 3 6-3v17l-6 3-6-3-6 3V5ZM9 2v17m6-14v17"/></>,
+  qualityPrecision: <><rect x="3" y="3" width="18" height="18" rx="3" fill="currentColor" fillOpacity=".08"/><path d="M3 12h18M12 3v18m-5-5 2 2 3-3"/></>,
+  qualityClean: <><path d="M12 2 4 5v6c0 5 3.5 8.8 8 11 4.5-2.2 8-6 8-11V5l-8-3Z" fill="currentColor" fillOpacity=".08"/><path d="m12 7 1.2 3.8L17 12l-3.8 1.2L12 17l-1.2-3.8L7 12l3.8-1.2L12 7Z"/></>,
+  qualityCalendar: <><rect x="3" y="5" width="18" height="16" rx="3" fill="currentColor" fillOpacity=".08"/><path d="M7 2.5v5m10-5v5M3 11h18m-13 5 3 3 5-5"/></>,
+  qualityAgreement: <><path d="M4 3h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2Z" fill="currentColor" fillOpacity=".08"/><path d="M18 8h1a2 2 0 0 1 2 2v12l-5-4h-5m-4-9 2 2 4-4"/></>,
+  qualityProcess: <><rect x="8" y="2" width="8" height="6" rx="2" fill="currentColor" fillOpacity=".08"/><rect x="2" y="16" width="8" height="6" rx="2" fill="currentColor" fillOpacity=".08"/><rect x="14" y="16" width="8" height="6" rx="2" fill="currentColor" fillOpacity=".08"/><path d="M12 8v4M6 16v-4h12v4"/></>,
+  search: <><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/></>,
+};
+export function Icon({ name, className = "", style }: { name: string; className?: string; style?: CSSProperties }) {
+  return <svg className={`icon ${className}`} style={style} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name] || paths.tile}</svg>;
+}

@@ -1,0 +1,1 @@
+export const routes = ["leistungen", "reparatur", "ueber-uns", "impressum", "datenschutz", "agb", "referenzen", "kontakt", "anfrage", "fliesenleger-cloppenburg", "fliesenleger-vechta", "fliesenleger-bremen", "fliesenleger-osnabrueck"];
