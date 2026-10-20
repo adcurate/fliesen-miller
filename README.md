@@ -2,7 +2,7 @@
 
 Statische, durchklickbare Vorschau der neuen Website mit Startseite, Leistungen, Referenzen, Über uns und den vier unterschiedlichen Einsatzgebieten.
 
-Geplanter Website-Link: **https://adcurate.github.io/fliesen-miller/**
+Website-Link: **https://adcurate.github.io/fliesen-miller/**
 
 ## Vorschau starten
 
@@ -25,9 +25,9 @@ npm run preview
 
 ## Auf GitHub Pages veröffentlichen
 
-Der aktuell verwendete GitHub-Tarif unterstützt Pages für dieses private Repository nicht. Das Repository muss dafür nach ausdrücklicher Freigabe öffentlich werden oder der GitHub-Tarif muss private Pages unterstützen. Anschließend unter **Settings → Pages → Build and deployment → Source: GitHub Actions** wählen und den Workflow „Website-Vorschau auf GitHub Pages“ starten. Künftige Änderungen an `main` veröffentlichen die Vorschau automatisch.
+Das Repository ist mit ausdrücklicher Freigabe öffentlich, und GitHub Pages verwendet **GitHub Actions** als Quelle. Änderungen an `main` veröffentlichen die Vorschau nach erfolgreichem Build und Prüfung automatisch. Bei Bedarf lässt sich der Workflow „Website-Vorschau auf GitHub Pages“ auch unter **Actions → Run workflow** starten.
 
-Der Workflow prüft auch im privaten Repository den Build; die Veröffentlichung wird dort übersprungen.
+Falls das Repository später wieder privat wird, überspringt der Workflow die Veröffentlichung. Der Build wird weiterhin geprüft.
 
 ## Umfang
 
