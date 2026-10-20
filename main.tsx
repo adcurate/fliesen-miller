@@ -4,6 +4,7 @@ import { Shell, Values, Regions, FAQ, ContactSection } from "@/components/Shared
 import { Hero, ServiceOverview, Premium, Projects } from "@/components/HomeSections";
 import { ServicesPage, CityPage, RepairPage, AboutPage, LegalPage, ReferencePage, ContactPage } from "@/components/Subpages";
 import { FunnelSection } from "@/components/Funnel";
+import { GoogleReviews } from "@/components/GoogleReviews";
 import { usePathname } from "@/preview/navigation";
 import { cities } from "@/lib/site";
 import "./styles.css";
@@ -22,7 +23,7 @@ function App() {
     }
   }, [slug]);
   let content;
-  if (path === "/") content = <><Hero /><ServiceOverview /><Premium /><Projects /><Values /><FunnelSection /><FAQ /><ContactSection /><Regions /></>;
+  if (path === "/") content = <><Hero /><ServiceOverview /><Premium /><Projects /><GoogleReviews /><Values /><FunnelSection /><FAQ /><ContactSection /><Regions /></>;
   else if (slug === "leistungen") content = <ServicesPage />;
   else if (slug === "reparatur") content = <RepairPage />;
   else if (slug === "ueber-uns") content = <AboutPage />;

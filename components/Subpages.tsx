@@ -4,6 +4,7 @@ import { PageHero, CTA, LinkArrow, ContactSection, Regions, FAQ, Values, Locatio
 import { Icon } from "./Icons";
 import { Gallery } from "./Gallery";
 import { FunnelSection } from "./Funnel";
+import { GoogleReviews } from "./GoogleReviews";
 export { RegionPage as CityPage } from "./RegionPage";
 type Node = string | number | null | { tag?:string; children?:Node|Node[]; className?:string; to?:string; href?:string; alt?:string; [key:string]:unknown };
 const children = (node:Node):Node[] => node && typeof node==="object" ? Array.isArray(node.children)?node.children:node.children==null?[]:[node.children] : [];
@@ -61,7 +62,7 @@ export function RepairPage(){
 export function AboutPage(){
   const sections=children(mainOf("/ueber-uns"));const hero=sourceHero("/ueber-uns");
   const aboutValues=findAll(sections[1],"h3").map((heading,i):[string,string]=>[text(heading),text(findAll(sections[1],"p")[i])]);
-  return <div className="about-page"><PageHero eyebrow={hero.eyebrow} title="Fliesen Miller aus Cloppenburg" intro="Fliesen- und Plattenarbeiten für private und gewerbliche Projekte. Vom klassischen Bodenformat bis zur XXL-Fliese mit Gehrungsschnitt." image="gallery-01" /><section className="section about-story-section"><div className="container about-story"><div>{hero.paragraphs.slice(1).map((p,i)=><p className={i===0?"large-copy":""} key={i}>{text(p)}</p>)}</div></div></section><Values title="Wofür wir stehen" items={aboutValues} icons={["qualityPrecision","qualityClean","qualityAgreement","qualityProcess"]} /><LocationSection /></div>;
+  return <div className="about-page"><PageHero eyebrow={hero.eyebrow} title="Fliesen Miller aus Cloppenburg" intro="Fliesen- und Plattenarbeiten für private und gewerbliche Projekte. Vom klassischen Bodenformat bis zur XXL-Fliese mit Gehrungsschnitt." image="gallery-01" /><section className="section about-story-section"><div className="container about-story"><div>{hero.paragraphs.slice(1).map((p,i)=><p className={i===0?"large-copy":""} key={i}>{text(p)}</p>)}</div></div></section><Values title="Wofür wir stehen" items={aboutValues} icons={["qualityPrecision","qualityClean","qualityAgreement","qualityProcess"]} /><GoogleReviews /><LocationSection /></div>;
 }
 export function LegalPage({slug}:{slug:string}){
   const route=`/${slug}`;const page=source.pages.find(p=>p.route===route)!;

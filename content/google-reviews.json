@@ -1,0 +1,28 @@
+{
+  "businessName": "Fliesen Miller Cloppenburg",
+  "source": "Google Maps",
+  "sourceUrl": "https://www.google.com/maps/place/Fliesen+Miller+Cloppenburg/@52.8322634,7.9971718,941m/data=!3m2!1e3!4b1!4m6!3m5!1s0x47b71593b99a8665:0x59d41a4cb869b77a!8m2!3d52.8322634!4d7.9997467!16s%2Fg%2F11q4b_9j0b",
+  "checkedAt": "2026-10-20",
+  "rating": 5.0,
+  "reviewCount": 3,
+  "reviews": [
+    {
+      "author": "Nick Iwert",
+      "rating": 5,
+      "excerpt": "Alles Top von der Beratung bis zum Abschluss der Arbeit.",
+      "isExcerpt": true
+    },
+    {
+      "author": "Max Iwert",
+      "rating": 5,
+      "excerpt": "Die hervorragende Beratung bei der Fliesenauswahl hat mich besonders begeistert.",
+      "isExcerpt": true
+    },
+    {
+      "author": "Michael Pedde",
+      "rating": 5,
+      "excerpt": null,
+      "isExcerpt": false
+    }
+  ]
+}

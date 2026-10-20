@@ -6,6 +6,7 @@ import { cities, site } from "@/lib/site";
 import { Icon } from "./Icons";
 import { FAQ } from "./Shared";
 import { FunnelSection } from "./Funnel";
+import { GoogleReviews } from "./GoogleReviews";
 
 type SourceNode = { tag?: string; children?: unknown; className?: string; href?: string; to?: string };
 function isNode(value: unknown): value is SourceNode { return !!value && typeof value === "object" && !Array.isArray(value); }
@@ -80,6 +81,7 @@ export function RegionPage({ slug }: { slug: string }) {
     <section className="section region-process"><div className="container"><div className="region-section-heading centered"><h2>{heading(process)}</h2><p>{text(find(process, "p")[0])}</p></div><ol className="region-step-grid">{processCards.map((node, i) => <li key={text(find(node, "h3")[0])}><span className="region-step-number">{i + 1}</span><h3>{text(find(node, "h3")[0])}</h3><p>{text(find(node, "p")[0])}</p></li>)}</ol></div></section>
 
     <section className="section region-coverage"><div className={`container ${original.sections[6].images.length ? "region-split" : "region-coverage-copy"}`}>{original.sections[6].images.length ? isImageFirst(coverage) ? <>{image(6)}{coverageCopy}</> : <>{coverageCopy}{image(6)}</> : coverageCopy}</div></section>
+    <GoogleReviews />
     <FunnelSection initialCity={city.name} />
     <FAQ />
     <section className="section region-closing"><div className="container"><h2>{heading(closing)}</h2>{find(closing, "p").map((p, i) => <p key={i}>{text(p)}</p>)}<div className="region-closing-actions"><a className="button inquiry-button" href="#anfrage">{text(closingButton) || "Projekt anfragen"}</a>{links(closing).filter(node => node.href?.startsWith("tel:")).map(node => <a className="text-link" href={node.href} key={node.href}><Icon name="phone" />{label(node)}</a>)}</div></div></section>
