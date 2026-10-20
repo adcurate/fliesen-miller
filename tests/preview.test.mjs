@@ -60,6 +60,24 @@ test("each URL delivers its own content, metadata and canonical without JavaScri
     const expected = `https://adcurate.github.io/fliesen-miller${page.path === "/" ? "/" : page.path + "/"}`;
     assert.equal(html.match(/rel="canonical" href="([^"]+)"/)[1], expected);
     assert.equal(html.match(/property="og:url" content="([^"]+)"/)[1], expected);
+    const schema = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
+    assert.equal(schema.length, 1, page.path);
+    const graph = JSON.parse(schema[0][1])["@graph"];
+    const business = graph.find(node => node["@type"] === "HomeAndConstructionBusiness");
+    const website = graph.find(node => node["@type"] === "WebSite");
+    const webpage = graph.find(node => node["@id"] === expected + "#webpage");
+    assert.equal(business["@id"], "https://adcurate.github.io/fliesen-miller/#business");
+    assert.equal(business.address.addressLocality, "Cloppenburg");
+    assert.equal(business.telephone, "+4944717084073");
+    assert.equal(webpage.isPartOf["@id"], website["@id"]);
+    assert.equal(website.publisher["@id"], business["@id"]);
+    assert.equal(webpage.about["@id"], business["@id"]);
+    assert.equal(webpage.description, page.description);
+    assert.ok(!business.aggregateRating && !business.review);
+    for (const key of ["image", "logo"]) {
+      const assetPath = new URL(business[key]).pathname.slice("/fliesen-miller/".length);
+      await access(new URL(`dist/${assetPath}`, root));
+    }
     for (const [, href] of html.matchAll(/<a\b[^>]*href="([^"]+)"/g)) {
       if (!href.startsWith("/fliesen-miller/")) continue;
       const url = new URL(href, "https://adcurate.github.io");
@@ -75,6 +93,7 @@ test("each URL delivers its own content, metadata and canonical without JavaScri
   const missing = await read("dist/404.html");
   assert.match(missing, /<h1>Seite nicht gefunden<\/h1>/);
   assert.doesNotMatch(missing, /rel="canonical"/);
+  assert.doesNotMatch(missing, /application\/ld\+json/);
   const sitemap = await read("dist/sitemap.xml");
   assert.equal((sitemap.match(/<loc>/g) || []).length, pages.filter(page => page.indexable).length);
   for (const page of pages) assert.equal(sitemap.includes(`/${page.path.slice(1)}/</loc>`), page.path !== "/" && page.indexable, page.path);
