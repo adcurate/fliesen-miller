@@ -407,9 +407,9 @@ body:has(.services-page) .footer-grid a[href="/#anfrage"]{color:var(--green)}
 @media(max-width:1080px){.cta-grid{grid-template-columns:1fr;gap:28px}.cta-actions{justify-content:flex-start}}
 @media(max-width:639px){.cta-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.cta-actions .button{font-size:14px;gap:8px;padding-inline:12px}}
 
-/* Familiar Google review colors inside a self-contained, locally rendered widget. */
-.google-reviews{background:var(--bg);border:0;--review-ink:#202124;--review-muted:#5f6368;--review-border:#dadce0;--review-star:#fbbc04}
-.google-reviews-widget{background:#fff;color:var(--review-ink);border:1px solid var(--review-border);border-radius:16px;padding:40px}
+/* Dark review widget with Google colors and the site's green action accent. */
+.google-reviews{background:var(--bg);border:0;--review-ink:#e8eaed;--review-muted:#bdc1c6;--review-border:#3c4043;--review-star:#fbbc04}
+.google-reviews-widget{background:var(--surface);color:var(--review-ink);border:1px solid var(--review-border);border-radius:16px;padding:40px}
 .google-reviews-brand{display:flex;align-items:center;gap:12px;margin-bottom:20px;font-size:13px;color:var(--review-muted)}
 .google-reviews-brand>img{width:74px;height:24px;object-fit:contain}
 .google-reviews-heading>div>p,.google-rating-summary>strong>span,.google-rating-count{color:var(--review-muted)}
@@ -417,12 +417,12 @@ body:has(.services-page) .footer-grid a[href="/#anfrage"]{color:var(--green)}
 .google-reviews-widget h2,.google-reviews-widget h3{color:var(--review-ink)}
 .google-review-stars{color:var(--review-star);gap:3px}
 .google-review-stars svg{stroke-width:0;width:20px;height:20px}
-.google-review{background:#fff;border-color:var(--review-border);padding:24px}
+.google-review{background:#202124;border-color:var(--review-border);padding:24px}
 .google-review-author{width:100%;gap:12px;margin-bottom:20px}
 .google-review-author>div{flex:1;min-width:0}
 .google-review-author>div>span{color:var(--review-muted)}
 .google-review-avatar{border:0;background:#4285f4;color:#fff;font-size:13px;font-weight:500}
-.google-review-avatar.avatar-1{background:#a142f4}.google-review-avatar.avatar-2{background:#34a853}
+.google-review-avatar.avatar-1{background:#ea4335}.google-review-avatar.avatar-2{background:#34a853}
 .google-review-mark{width:20px;height:20px;flex-shrink:0;object-fit:contain}
 .google-review blockquote p{color:var(--review-ink);font-size:16px}
 .google-review-excerpt,.google-review-without-text,.google-reviews-footer p{color:var(--review-muted)}
