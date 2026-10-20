@@ -12,7 +12,7 @@ function findAll(node:Node,tag:string):Exclude<Node,string|number|null>[] { if(!
 function text(node:Node):string {if(typeof node==="string"||typeof node==="number")return String(node);return children(node).map(text).join("");}
 function mainOf(route:string) { return findAll(source.pages.find(p=>p.route===route)?.tree as Node,"main")[0]; }
 
-function RichSource({node,legal=false,imageIndex=3,requestHref="/#anfrage",initialCity="",omitServiceRelatedLinks=false}:{node:Node;legal?:boolean;imageIndex?:number;requestHref?:string;initialCity?:string;omitServiceRelatedLinks?:boolean}) {
+function RichSource({node,legal=false,imageIndex=3,requestHref="/anfrage",initialCity="",omitServiceRelatedLinks=false}:{node:Node;legal?:boolean;imageIndex?:number;requestHref?:string;initialCity?:string;omitServiceRelatedLinks?:boolean}) {
   let images=imageIndex;
   function render(n:Node,key:number|string=0):ReactNode {
     if(n==null)return null;if(typeof n==="string"||typeof n==="number")return n;

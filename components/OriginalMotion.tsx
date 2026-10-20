@@ -4,7 +4,7 @@ import images from "@/content/gallery.json";
 import { Icon } from "./Icons";
 
 export function TypingWord() {
-  const [word,setWord]=useState("");
+  const [word,setWord]=useState("Fliesen");
   useEffect(()=>{
     const media=window.matchMedia("(prefers-reduced-motion: reduce)");
     let timer:ReturnType<typeof setTimeout>;let index=0,count=0,deleting=false;
@@ -20,7 +20,7 @@ export function TypingWord() {
     function restart(){clearTimeout(timer);index=0;count=0;deleting=false;if(media.matches)setWord(words[0]);else{setWord("");timer=setTimeout(tick,120);}}
     restart();media.addEventListener("change",restart);return()=>{clearTimeout(timer);media.removeEventListener("change",restart);};
   },[]);
-  return <><span className="sr-only">Fliesen, Platten und Mosaik</span><span className="typing-word" aria-hidden="true">{word}<span className="typing-caret">|</span></span></>;
+  return <><span className="sr-only">Fliesenleger in Cloppenburg – Fliesen, Platten und Mosaik</span><span className="typing-word" aria-hidden="true">{word}<span className="typing-caret">|</span></span></>;
 }
 export function PremiumVideo(){
   const ref=useRef<HTMLVideoElement>(null);const [paused,setPaused]=useState(false);const userPaused=useRef(false);

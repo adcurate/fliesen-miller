@@ -1,1 +1,3 @@
-export const routes = ["leistungen", "reparatur", "ueber-uns", "impressum", "datenschutz", "agb", "referenzen", "kontakt", "anfrage", "fliesenleger-cloppenburg", "fliesenleger-vechta", "fliesenleger-bremen", "fliesenleger-osnabrueck"];
+import { readFileSync } from "node:fs";
+export const pages = JSON.parse(readFileSync(new URL("../content/seo-pages.json", import.meta.url), "utf8"));
+export const routes = pages.filter(page => page.path !== "/").map(page => page.path.slice(1));

@@ -36,3 +36,17 @@ Das Formular lässt sich bis zum letzten Schritt ansehen. **Der Versand ist deak
 Telefon- und E-Mail-Links öffnen auf Wunsch die jeweilige Anwendung. Die Standortkarte wird erst auf Klick eingebunden. Bilder, Logos, Schriften und Video liegen lokal im Repository. Hinweise zu den übernommenen öffentlichen Medien stehen in `content/asset-sources.json` und `content/provider-logo-sources.json`.
 
 Diese Vorschau ist mit `noindex` gekennzeichnet; das ist kein Zugriffsschutz. Bei einer Veröffentlichung sind die Website und der Quellcode öffentlich abrufbar. Die Inhalte bleiben Eigentum ihrer jeweiligen Rechteinhaber; es wird keine allgemeine Nutzungslizenz eingeräumt.
+
+## Seitenadressen und SEO
+
+Die 17 Seiten stehen zentral in `content/seo-pages.json`. Jede URL liefert vollständig gerendertes HTML mit eigenem Titel, Beschreibung, Canonical und Social-Media-Metadaten. Die vier regionalen URLs bleiben unverändert. Abschnittsanker bleiben als Sprungmarken erhalten. Die Sitemap enthält die 14 für die Suche vorgesehenen Seiten.
+
+Die GitHub-Demo bleibt bis zum endgültigen Start auf `noindex`. Für den Produktionsstart:
+
+1. `SITE_URL` auf die öffentlich erreichbare Hauptadresse setzen, beispielsweise `https://fliesen-miller.de`.
+2. `SEO_INDEXING_ENABLED=true` setzen und neu bauen. Dadurch werden die Inhaltsseiten und `robots.txt` für Suchmaschinen freigegeben.
+3. Beim Hosting unter der Domainwurzel den Vite-Basispfad auf `/` ändern; beim GitHub-Projektlink bleibt er `/fliesen-miller/`.
+4. Die HTTP-Antworten, Canonicals, Sitemap und `robots.txt` auf der Hauptdomain prüfen. Geänderte alte URLs serverseitig mit 301 auf die passenden neuen Seiten weiterleiten.
+5. Die Sitemap in Google Search Console einreichen. Google entscheidet über Indexierung und Rankings.
+
+Die geschützte Sites-Version muss für eine Indexierung ebenfalls öffentlich erreichbar sein. Der Formularversand ist in dieser statischen GitHub-Demo weiterhin deaktiviert.

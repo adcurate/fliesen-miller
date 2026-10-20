@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile, readdir, access } from "node:fs/promises";
 import ts from "typescript";
-import { routes } from "../preview/routes.mjs";
+import { routes, pages } from "../preview/routes.mjs";
 
 const root = new URL("../", import.meta.url);
 const read = path => readFile(new URL(path, root), "utf8");
@@ -12,8 +12,8 @@ const { previewUrl, localProps } = await import(`data:text/javascript;base64,${B
 
 test("project URLs preserve hashes, queries, external compose links and protocol links", () => {
   assert.equal(previewUrl("/"), "/fliesen-miller/");
-  assert.equal(previewUrl("/leistungen#bodenfliesen"), "/fliesen-miller/leistungen#bodenfliesen");
-  assert.equal(previewUrl("/anfrage?ort=Bremen"), "/fliesen-miller/anfrage?ort=Bremen");
+  assert.equal(previewUrl("/leistungen#bodenfliesen"), "/fliesen-miller/leistungen/#bodenfliesen");
+  assert.equal(previewUrl("/anfrage?ort=Bremen"), "/fliesen-miller/anfrage/?ort=Bremen");
   assert.equal(previewUrl("/fliesen-miller/media/logo.webp"), "/fliesen-miller/media/logo.webp");
   for (const value of ["#anfrage", "mailto:info@fliesen-miller.de", "tel:+4944717084073", "https://mail.google.com/mail/?view=cm", "//example.com/image.png", "blob:example"]) assert.equal(previewUrl(value), value);
   assert.deepEqual(localProps("img", { src: "/media/logo.webp", alt: "Logo" }), { src: "/fliesen-miller/media/logo.webp", alt: "Logo" });
@@ -24,8 +24,8 @@ test("project URLs preserve hashes, queries, external compose links and protocol
 test("every supported route has a static entry point and base-aware build assets", async () => {
   for (const path of ["index.html", "404.html", ...routes.map(route => `${route}/index.html`)]) {
     const html = await read(`dist/${path}`);
-    assert.match(html, /name="robots" content="noindex, nofollow"/);
-    const paths = [...html.matchAll(/(?:src|href)="(\/[^"#]+)"/g)].map(match => match[1]);
+    assert.match(html, /name="robots" content="noindex, follow"/);
+    const paths = [...html.matchAll(/(?:src|href)="(\/[^"#]+)"/g)].map(match => match[1]).filter(path => /\.[a-z0-9]+$/.test(path));
     assert.ok(paths.length >= 3);
     for (const asset of paths) {
       assert.ok(asset.startsWith("/fliesen-miller/"), `${path}: ${asset}`);
@@ -41,6 +41,42 @@ test("every supported route has a static entry point and base-aware build assets
       await access(new URL(`dist/${font.slice("/fliesen-miller/".length)}`, root));
     }
   }
+});
+
+test("each URL delivers its own content, metadata and canonical without JavaScript", async () => {
+  const titles = new Set(), descriptions = new Set();
+  const knownPaths = new Set(pages.map(page => page.path));
+  for (const page of pages) {
+    const html = await read(`dist/${page.path === "/" ? "" : page.path.slice(1) + "/"}index.html`);
+    const title = html.match(/<title>(.*?)<\/title>/)[1];
+    const description = html.match(/name="description" content="([^"]+)"/)[1];
+    assert.ok(!titles.has(title), `Duplicate title: ${title}`);
+    assert.ok(!descriptions.has(description), `Duplicate description: ${description}`);
+    titles.add(title); descriptions.add(description);
+    assert.equal((html.match(/<h1(?:\s|>)/g) || []).length, 1, page.path);
+    assert.match(html, /<main id="main">[\s\S]+<\/main>/);
+    const expected = `https://adcurate.github.io/fliesen-miller${page.path === "/" ? "/" : page.path + "/"}`;
+    assert.equal(html.match(/rel="canonical" href="([^"]+)"/)[1], expected);
+    assert.equal(html.match(/property="og:url" content="([^"]+)"/)[1], expected);
+    for (const [, href] of html.matchAll(/<a\b[^>]*href="([^"]+)"/g)) {
+      if (!href.startsWith("/fliesen-miller/")) continue;
+      const url = new URL(href, "https://adcurate.github.io");
+      const path = url.pathname.slice("/fliesen-miller".length).replace(/\/$/, "") || "/";
+      assert.ok(knownPaths.has(path), `Broken page link ${href} in ${page.path}`);
+      if (url.hash) {
+        const target = await read(`dist/${path === "/" ? "" : path.slice(1) + "/"}index.html`);
+        assert.ok(target.includes(`id="${decodeURIComponent(url.hash.slice(1))}"`), `Missing anchor ${href}`);
+      }
+    }
+  }
+  const missing = await read("dist/404.html");
+  assert.match(missing, /<h1>Seite nicht gefunden<\/h1>/);
+  assert.doesNotMatch(missing, /rel="canonical"/);
+  const sitemap = await read("dist/sitemap.xml");
+  assert.equal((sitemap.match(/<loc>/g) || []).length, pages.filter(page => page.indexable).length);
+  for (const page of pages) assert.equal(sitemap.includes(`/${page.path.slice(1)}/</loc>`), page.path !== "/" && page.indexable, page.path);
+  assert.doesNotMatch(sitemap, /#|admin|unsubscribe|impressum|datenschutz|\/agb/);
+  assert.match(await read("dist/robots.txt"), /Disallow: \//);
 });
 
 test("preview has no inquiry transport or admin implementation", async () => {

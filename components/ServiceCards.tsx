@@ -10,7 +10,7 @@ export type ServiceCardItem = {
 
 const homeServices: ServiceCardItem[] = [
   { label: "Standard", icon: "tile", text: "Bäder, Böden und Küchen – sauber verlegt und zuverlässig umgesetzt.", link: "/leistungen" },
-  { label: "Premium", icon: "diamond", text: "Großformat, saubere Übergänge und hochwertige Details für ein ruhiges Gesamtbild.", link: "#premium" },
+  { label: "Premium", icon: "diamond", text: "Großformat, saubere Übergänge und hochwertige Details für ein ruhiges Gesamtbild.", link: "/premium" },
   { label: "Reparatur", icon: "repair", text: "Einzelne Fliese oder Schaden – wir kümmern uns darum.", link: "/reparatur" },
 ];
 

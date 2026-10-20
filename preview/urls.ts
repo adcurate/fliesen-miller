@@ -2,7 +2,10 @@
 export function previewUrl(value: unknown): unknown {
   if (typeof value !== "string" || !value.startsWith("/") || value.startsWith("//")) return value;
   const base = import.meta.env.BASE_URL;
-  return value.startsWith(base) ? value : base + value.slice(1);
+  const local = value.startsWith(base) ? "/" + value.slice(base.length) : value;
+  const [, path, suffix = ""] = local.match(/^([^?#]*)(.*)$/)!;
+  const isPage = path !== "/" && !path.endsWith("/") && !path.split("/").at(-1)!.includes(".");
+  return base + (isPage ? path + "/" : path).slice(1) + suffix;
 }
 
 export function localProps(type: unknown, props: unknown) {
