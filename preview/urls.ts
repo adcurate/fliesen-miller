@@ -14,5 +14,6 @@ export function localProps(type: unknown, props: unknown) {
   for (const key of ["href", "src", "poster"]) {
     if (key in result) result[key] = previewUrl(result[key]);
   }
+  if (typeof result.srcSet === "string") result.srcSet = result.srcSet.split(",").map(candidate => candidate.trim().replace(/^(\S+)(.*)$/, (_, url: string, descriptor: string) => String(previewUrl(url)) + descriptor)).join(", ");
   return result;
 }

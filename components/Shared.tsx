@@ -7,14 +7,15 @@ import { LocationMap } from "./LocationMap";
 import { OriginalFAQ } from "./OriginalMotion";
 import { cities, site, values } from "@/lib/site";
 import source from "@/content/source.json";
+import { InPageNavigation } from "./InPageNavigation";
 
-export function Shell({ children }: { children: React.ReactNode }) { return <div id="top"><Header /><main id="main">{children}</main><Footer /><CookiePanel /></div>; }
+export function Shell({ children }: { children: React.ReactNode }) { return <div id="top"><InPageNavigation /><Header /><main id="main">{children}</main><Footer /><CookiePanel /></div>; }
 export function LinkArrow({ href, children, className = "" }: { href: string; children: React.ReactNode; className?: string }) { return <a href={href} className={`text-link ${className}`}>{children}<Icon name="arrowUp" /></a>; }
 export function PageHero({ title, intro, eyebrow, image, compact = false, requestLabel, requestHref = "/anfrage", phoneLabel, back = false }: { title: string; intro: string; eyebrow: string; image?: string; compact?: boolean; requestLabel?:string; requestHref?:string; phoneLabel?:string; back?:boolean }) {
   return <section className={`page-hero ${compact ? "compact" : ""} ${!image ? "page-hero-text" : ""}`}><div className="container page-hero-grid"><div>{back&&<a className="text-link back-home" href="/">← Zurück zur Startseite</a>}<h1>{title}</h1>{intro&&<p className="hero-intro">{intro}</p>}<div className="hero-buttons">{requestLabel&&<a href={requestHref} className="button inquiry-button">{requestLabel}</a>}{phoneLabel&&<a href={site.phoneHref} className={requestLabel?"button button-outline":"button"}>{phoneLabel}<Icon name="phone" /></a>}</div></div>{!compact && image && <div className="page-hero-image"><img src={`/media/${image}.webp`} alt="Fliesenarbeit von Fliesen Miller" width="1280" height="960" fetchPriority="high" /></div>}</div></section>;
 }
-export function CTA({ title = "Projekt besprechen", text = "Rufen Sie uns an oder nutzen Sie unser Anfrageformular.", requestLabel = "Angebot anfragen", phoneLabel = "Anrufen: 04471 / 70 840 73" }: { title?: string; text?: string; requestLabel?:string; phoneLabel?:string }) {
-  return <section className="cta-section"><div className="container cta-grid"><div><h2>{title}</h2><p>{text}</p></div><div className="cta-actions"><a href={site.phoneHref} className="button">{phoneLabel}<Icon name="phone" /></a><a className="button button-outline inquiry-button" href="/anfrage">{requestLabel}</a></div></div></section>;
+export function CTA({ title = "Projekt besprechen", text = "Rufen Sie uns an oder nutzen Sie unser Anfrageformular.", requestLabel = "Projekt anfragen", phoneLabel = "Anrufen: 04471 / 70 840 73" }: { title?: string; text?: string; requestLabel?:string; phoneLabel?:string }) {
+  return <section className="cta-section"><div className="container cta-grid"><div><h2>{title}</h2><p>{text}</p></div><div className="cta-actions"><a href={site.phoneHref} className="button button-outline">{phoneLabel}<Icon name="phone" /></a><a className="button inquiry-button" href="/anfrage">{requestLabel}</a></div></div></section>;
 }
 export function Values({ title = "So arbeiten wir", items = values, icons = ["qualityClean","qualityCalendar","qualityAgreement","qualityProcess"] }: { title?: string; items?: ReadonlyArray<readonly [string,string]>; icons?: readonly string[] }) {
   return <section className="section values-section"><div className="container"><div className="section-heading"><div><h2>{title}</h2></div></div><div className="values-grid">{items.map(([heading, description],i) => <article key={heading}><Icon name={icons[i]} className="value-icon" /><h3>{heading}</h3><p>{description}</p></article>)}</div></div></section>;

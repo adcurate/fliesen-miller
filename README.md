@@ -50,3 +50,11 @@ Die GitHub-Demo bleibt bis zum endgültigen Start auf `noindex`. Für den Produk
 5. Die Sitemap in Google Search Console einreichen. Google entscheidet über Indexierung und Rankings.
 
 Die geschützte Sites-Version muss für eine Indexierung ebenfalls öffentlich erreichbar sein. Der Formularversand ist in dieser statischen GitHub-Demo weiterhin deaktiviert.
+
+## Galerie und Navigation
+
+Die Galerie zeigt 47 Fotos ohne Logo-Collage. Jede der vier gegenläufigen Reihen rendert nur ein kleines Bildfenster; außerhalb des Viewports und in ausgeblendeten Tabs pausiert die Bewegung. Responsive 320-/640-Pixel-Vorschauen ersetzen die bisherigen großen Vorschaubilder. Große Bilder werden im Dialog geladen. Die vollständige statische Übersicht ist weiterhin per Tastatur erreichbar und ersetzt die Bewegung.
+
+Interne Sprungmarken und erneute Klicks auf dieselbe Seite scrollen ohne Neuladen und erhalten den Formularzustand. Ein bereits eingebetteter Funnel wird direkt angesteuert. Andere Seiten, neue Formularparameter, externe Links, Downloads und neue Tabs verhalten sich wie gewohnt. Premium und Referenzen enthalten jetzt ebenfalls den Funnel; dessen Versand bleibt in dieser Demo deaktiviert.
+
+Die Google-Bewertungen verwenden lokal ausgelieferte Google-Markenassets, gelbe Sterne, helle Karten und grüne Akzente. Sie bleiben ein mit Datum gekennzeichneter Quellenstand, ohne externes Widget-Skript.

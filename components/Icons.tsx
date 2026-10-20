@@ -26,11 +26,11 @@ const paths: Record<string, React.ReactNode> = {
   agreement: <><path d="M21 11a8 8 0 0 1-8 8H7l-4 3V11a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8Z"/><path d="m8 11 3 3 5-5"/></>,
   clipboard: <><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="M9 11h6m-6 5h6"/></>,
   map: <><path d="m3 5 6-3 6 3 6-3v17l-6 3-6-3-6 3V5ZM9 2v17m6-14v17"/></>,
-  qualityPrecision: <><rect x="3" y="3" width="18" height="18" rx="3" fill="currentColor" fillOpacity=".08"/><path d="M3 12h18M12 3v18m-5-5 2 2 3-3"/></>,
-  qualityClean: <><path d="M12 2 4 5v6c0 5 3.5 8.8 8 11 4.5-2.2 8-6 8-11V5l-8-3Z" fill="currentColor" fillOpacity=".08"/><path d="m12 7 1.2 3.8L17 12l-3.8 1.2L12 17l-1.2-3.8L7 12l3.8-1.2L12 7Z"/></>,
+  qualityPrecision: <><path d="M3 3v18h18L3 3Z" fill="currentColor" fillOpacity=".07"/><path d="M7 12v5h5l-5-5ZM3 8h2m-2 5h2m-2 5h2m5 3v-2m5 2v-2m3-16v8m-4-4h8"/></>,
+  qualityClean: <><path d="m14 3-4 8m-3-1 8 4-4 8-8-4 4-8Z" fill="currentColor" fillOpacity=".07"/><path d="m5 15 8 4m-5-3-2 4m12-9 1-3 3-1-3-1-1-3-1 3-3 1 3 1 1 3Z"/></>,
   qualityCalendar: <><rect x="3" y="5" width="18" height="16" rx="3" fill="currentColor" fillOpacity=".08"/><path d="M7 2.5v5m10-5v5M3 11h18m-13 5 3 3 5-5"/></>,
-  qualityAgreement: <><path d="M4 3h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2Z" fill="currentColor" fillOpacity=".08"/><path d="M18 8h1a2 2 0 0 1 2 2v12l-5-4h-5m-4-9 2 2 4-4"/></>,
-  qualityProcess: <><rect x="8" y="2" width="8" height="6" rx="2" fill="currentColor" fillOpacity=".08"/><rect x="2" y="16" width="8" height="6" rx="2" fill="currentColor" fillOpacity=".08"/><rect x="14" y="16" width="8" height="6" rx="2" fill="currentColor" fillOpacity=".08"/><path d="M12 8v4M6 16v-4h12v4"/></>,
+  qualityAgreement: <><path d="m3 7 4-3 5 1 5-1 4 3v7l-4 4-3 3-3-1-5-5H3V7Z" fill="currentColor" fillOpacity=".07"/><path d="m12 5-4 5 2 2 4-3 6 6M3 7l3 2-3 6m18-8-3 2 3 5m-7 0 4 4m-7-1 4 4"/></>,
+  qualityProcess: <><rect x="5" y="4" width="15" height="18" rx="2" fill="currentColor" fillOpacity=".07"/><rect x="9" y="2" width="7" height="4" rx="1.5"/><path d="m8 11 1.5 1.5L12 10m2 1h3m-9 6 1.5 1.5L12 16m2 1h3"/></>,
   search: <><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/></>,
 };
 export function Icon({ name, className = "", style }: { name: string; className?: string; style?: CSSProperties }) {

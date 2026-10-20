@@ -5,6 +5,7 @@ import { Icon } from "./Icons";
 import { WorkGallery } from "./WorkGallery";
 import { FunnelSection } from "./Funnel";
 import { GoogleReviews } from "./GoogleReviews";
+import { galleryTitle, galleryIntro } from "@/lib/gallery";
 export { RegionPage as CityPage } from "./RegionPage";
 type Node = string | number | null | { tag?:string; children?:Node|Node[]; className?:string; to?:string; href?:string; alt?:string; [key:string]:unknown };
 const children = (node:Node):Node[] => node && typeof node==="object" ? Array.isArray(node.children)?node.children:node.children==null?[]:[node.children] : [];
@@ -15,7 +16,7 @@ function mainOf(route:string) { return findAll(source.pages.find(p=>p.route===ro
 function RichSource({node,legal=false,imageIndex=3,requestHref="/anfrage",initialCity="",omitServiceRelatedLinks=false}:{node:Node;legal?:boolean;imageIndex?:number;requestHref?:string;initialCity?:string;omitServiceRelatedLinks?:boolean}) {
   let images=imageIndex;
   function render(n:Node,key:number|string=0):ReactNode {
-    if(n==null)return null;if(typeof n==="string"||typeof n==="number")return n;
+    if(n==null)return null;if(typeof n==="string")return n.replaceAll("Angebot anfragen","Projekt anfragen");if(typeof n==="number")return n;
     const tag=n.tag||"div";const ch=children(n);
     if(omitServiceRelatedLinks&&tag==="div"&&["/ueber-uns","/reparatur","/fliesenleger-cloppenburg"].every(href=>ch.some(child=>child&&typeof child==="object"&&(child.to===href||child.href===href))))return null;
     if(["SEO","Header","Footer"].includes(tag))return null;
@@ -69,5 +70,5 @@ export function LegalPage({slug}:{slug:string}){
   const titles:Record<string,string>={impressum:"Impressum",datenschutz:"Datenschutzerklärung",agb:"Allgemeine Geschäftsbedingungen"};
   return <section className="section legal-page"><div className="container legal-layout"><aside><a href="/">← Zur Startseite</a><nav aria-label="Rechtliche Informationen">{["impressum","datenschutz","agb"].map(key=><a key={key} href={`/${key}`} aria-current={key===slug?"page":undefined}>{titles[key]}</a>)}</nav></aside><article className="legal-content"><h1>{titles[slug]}</h1><RichSource node={mainOf(route)} legal /></article></div></section>;
 }
-export function ReferencePage(){return <><PageHero compact eyebrow="Referenzen" title="Arbeitsgalerie" intro="Bäder, Böden und Fliesendetails aus unseren Projekten." /><WorkGallery standalone /><CTA /></>;}
+export function ReferencePage(){return <><PageHero compact eyebrow="Referenzen" title={galleryTitle} intro={galleryIntro} /><WorkGallery standalone /><FunnelSection /></>;}
 export function ContactPage(){return <><PageHero compact eyebrow="Erreichbarkeit" title="Kontakt" intro="" /><ContactSection /><Regions /><CTA /></>;}
