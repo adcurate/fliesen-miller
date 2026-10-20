@@ -6,7 +6,8 @@ const template = await readFile(new URL("../dist/index.html", import.meta.url), 
 // Keep the public demonstration out of search until the final domain is launched.
 const origin = (process.env.SITE_URL || "https://adcurate.github.io/fliesen-miller").replace(/\/$/, "");
 const indexingEnabled = process.env.SEO_INDEXING_ENABLED === "true";
-const url = path => origin + (path === "/" ? "/" : `${path}/`);
+// Only page URLs use trailing slashes; image URLs must resolve to the actual file.
+const url = path => origin + (path === "/" || path.split("/").at(-1).includes(".") ? path : `${path}/`);
 const escape = value => String(value).replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch]);
 const server = await createServer({ server: { middlewareMode: true }, appType: "custom" });
 try {

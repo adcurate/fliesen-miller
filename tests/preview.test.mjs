@@ -75,6 +75,7 @@ test("each URL delivers its own content, metadata and canonical without JavaScri
     assert.equal(webpage.description, page.description);
     assert.ok(!business.aggregateRating && !business.review);
     for (const key of ["image", "logo"]) {
+      assert.ok(!business[key].endsWith("/"), `Image URL has a trailing slash: ${business[key]}`);
       const assetPath = new URL(business[key]).pathname.slice("/fliesen-miller/".length);
       await access(new URL(`dist/${assetPath}`, root));
     }
