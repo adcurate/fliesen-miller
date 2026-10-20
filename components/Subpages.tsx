@@ -2,7 +2,7 @@ import { createElement, Fragment, type ReactNode } from "react";
 import source from "@/content/source.json";
 import { PageHero, CTA, LinkArrow, ContactSection, Regions, FAQ, Values, LocationSection } from "./Shared";
 import { Icon } from "./Icons";
-import { Gallery } from "./Gallery";
+import { ReferenceCarousel } from "./OriginalMotion";
 import { FunnelSection } from "./Funnel";
 import { GoogleReviews } from "./GoogleReviews";
 export { RegionPage as CityPage } from "./RegionPage";
@@ -57,17 +57,17 @@ export function ServicesPage(){
 }
 export function RepairPage(){
   const sections=children(mainOf("/reparatur"));const hero=sourceHero("/reparatur");
-  return <><PageHero eyebrow={hero.eyebrow} title="Fliesenreparatur & Versicherung" intro={text(hero.paragraphs[0])} image="gallery-09" phoneLabel="Jetzt anrufen: 04471 / 70 840 73" back /><div className="repair-source">{sections.slice(1).map((section,i)=><RichSource node={section} key={i} requestHref="/anfrage?projekt=reparatur" />)}</div></>;
+  return <><PageHero eyebrow={hero.eyebrow} title="Fliesenreparatur & Versicherung" intro={text(hero.paragraphs[0])} phoneLabel="Jetzt anrufen: 04471 / 70 840 73" back /><div className="repair-source">{sections.slice(1).map((section,i)=><RichSource node={section} key={i} requestHref="/anfrage?projekt=reparatur" />)}</div></>;
 }
 export function AboutPage(){
   const sections=children(mainOf("/ueber-uns"));const hero=sourceHero("/ueber-uns");
   const aboutValues=findAll(sections[1],"h3").map((heading,i):[string,string]=>[text(heading),text(findAll(sections[1],"p")[i])]);
-  return <div className="about-page"><PageHero eyebrow={hero.eyebrow} title="Fliesen Miller aus Cloppenburg" intro="Fliesen- und Plattenarbeiten für private und gewerbliche Projekte. Vom klassischen Bodenformat bis zur XXL-Fliese mit Gehrungsschnitt." image="gallery-01" /><section className="section about-story-section"><div className="container about-story"><div>{hero.paragraphs.slice(1).map((p,i)=><p className={i===0?"large-copy":""} key={i}>{text(p)}</p>)}</div></div></section><Values title="Wofür wir stehen" items={aboutValues} icons={["qualityPrecision","qualityClean","qualityAgreement","qualityProcess"]} /><GoogleReviews /><LocationSection /></div>;
+  return <div className="about-page"><PageHero eyebrow={hero.eyebrow} title="Fliesen Miller aus Cloppenburg" intro="Fliesen- und Plattenarbeiten für private und gewerbliche Projekte. Vom klassischen Bodenformat bis zur XXL-Fliese mit Gehrungsschnitt." /><section className="section about-story-section"><div className="container about-story"><div>{hero.paragraphs.slice(1).map((p,i)=><p className={i===0?"large-copy":""} key={i}>{text(p)}</p>)}</div></div></section><Values title="Wofür wir stehen" items={aboutValues} icons={["qualityPrecision","qualityClean","qualityAgreement","qualityProcess"]} /><GoogleReviews /><LocationSection /></div>;
 }
 export function LegalPage({slug}:{slug:string}){
   const route=`/${slug}`;const page=source.pages.find(p=>p.route===route)!;
   const titles:Record<string,string>={impressum:"Impressum",datenschutz:"Datenschutzerklärung",agb:"Allgemeine Geschäftsbedingungen"};
   return <section className="section legal-page"><div className="container legal-layout"><aside><a href="/">← Zur Startseite</a><nav aria-label="Rechtliche Informationen">{["impressum","datenschutz","agb"].map(key=><a key={key} href={`/${key}`} aria-current={key===slug?"page":undefined}>{titles[key]}</a>)}</nav></aside><article className="legal-content"><h1>{titles[slug]}</h1><RichSource node={mainOf(route)} legal /></article></div></section>;
 }
-export function ReferencePage(){return <><PageHero compact eyebrow="Referenzen" title="Referenzen" intro="" /><section className="section gallery-section"><div className="container"><Gallery /></div></section><CTA /></>;}
+export function ReferencePage(){return <><PageHero compact eyebrow="Referenzen" title="Referenzen" intro="" /><section className="section gallery-section"><div className="container"><ReferenceCarousel /></div></section><CTA /></>;}
 export function ContactPage(){return <><PageHero compact eyebrow="Erreichbarkeit" title="Kontakt" intro="" /><ContactSection /><Regions /><CTA /></>;}

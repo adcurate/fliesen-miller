@@ -55,7 +55,7 @@ export function RegionPage({ slug }: { slug: string }) {
   function image(section: number, index = 0, eager = false) {
     const asset = original.sections[section].images[index];
     if (!asset) return null;
-    return <div className="region-image"><img src={`/media/regions/${asset.src.split("/").at(-1)}`} alt={asset.alt} width="1280" height="720" loading={eager ? "eager" : "lazy"} fetchPriority={eager ? "high" : undefined} /></div>;
+    return <div className="region-image"><img src={`/media/regions/${asset.src.split("/").at(-1)}`} alt={asset.alt} width="1280" height="960" loading={eager ? "eager" : "lazy"} fetchPriority={eager ? "high" : undefined} /></div>;
   }
 
   const coverageCopy = <div className="region-copy"><h2>{heading(coverage)}</h2>{coverageParagraphs.slice(0, 1).map((p, i) => <p key={i}>{text(p)}</p>)}<div className="region-area-links">{links(coverage).map(node => <a key={node.to || node.href} href={node.to || node.href}><Icon name="pin" />{label(node)}</a>)}{coverageParagraphs.slice(1).map((p, i) => <p key={i}><Icon name="pin" />{text(p)}</p>)}</div></div>;

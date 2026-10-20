@@ -1,0 +1,1242 @@
+{
+  "checkedAt": "2026-10-20",
+  "pages": [
+    {
+      "backgrounds": [],
+      "images": [
+        {
+          "alt": "Moderne Fliesenarbeit",
+          "aspectRatio": "auto",
+          "className": "w-full h-full object-cover animate-ken-burns",
+          "grandparentClass": "relative min-h-screen flex items-end overflow-hidden",
+          "index": 0,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "absolute inset-0",
+          "position": {
+            "height": 735,
+            "width": 1291,
+            "x": -17,
+            "y": -9
+          },
+          "poster": "",
+          "section": "Platten",
+          "sectionId": "",
+          "src": "/assets/hero-bg-DS3C8vCj.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "",
+          "aspectRatio": "auto",
+          "className": "w-full h-full object-cover",
+          "grandparentClass": "relative",
+          "index": 1,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "relative h-[50vh] md:h-[60vh] overflow-hidden",
+          "position": {
+            "height": 432,
+            "width": 1265,
+            "x": 0,
+            "y": 1842
+          },
+          "poster": "",
+          "section": "Für Kunden, die Wert auf ein sauberes Gesamtbild legen",
+          "sectionId": "premium",
+          "src": "/videos/gehrungsschnitt.mp4",
+          "tag": "VIDEO"
+        },
+        {
+          "alt": "Modernes Badezimmer mit hochwertigen Fliesen",
+          "aspectRatio": "16 / 9",
+          "className": "absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0 z-0",
+          "grandparentClass": "relative w-full overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.15)]",
+          "index": 2,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[16/9] relative",
+          "position": {
+            "height": 640,
+            "width": 1137,
+            "x": 64,
+            "y": 3110
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-bathroom.jpg",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Stilvolles WC mit Fliesenverlegung",
+          "aspectRatio": "16 / 9",
+          "className": "absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0 z-0",
+          "grandparentClass": "relative w-full overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.15)]",
+          "index": 3,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[16/9] relative",
+          "position": {
+            "height": 640,
+            "width": 1137,
+            "x": 64,
+            "y": 3110
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-wc.jpg",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Professionell verlegte Bodenfliesen",
+          "aspectRatio": "16 / 9",
+          "className": "absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0 z-0",
+          "grandparentClass": "relative w-full overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.15)]",
+          "index": 4,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[16/9] relative",
+          "position": {
+            "height": 640,
+            "width": 1137,
+            "x": 64,
+            "y": 3110
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-floor.jpg",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Fliesendetail in Nahaufnahme",
+          "aspectRatio": "16 / 9",
+          "className": "absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-100 z-10",
+          "grandparentClass": "relative w-full overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.15)]",
+          "index": 5,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[16/9] relative",
+          "position": {
+            "height": 640,
+            "width": 1137,
+            "x": 64,
+            "y": 3110
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-detail.jpg",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Küchenrückwand mit Fliesen",
+          "aspectRatio": "16 / 9",
+          "className": "absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0 z-0",
+          "grandparentClass": "relative w-full overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.15)]",
+          "index": 6,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[16/9] relative",
+          "position": {
+            "height": 640,
+            "width": 1137,
+            "x": 64,
+            "y": 3110
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-kitchen.jpg",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Spa-Bereich mit hochwertiger Fliesenarbeit",
+          "aspectRatio": "16 / 9",
+          "className": "absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0 z-0",
+          "grandparentClass": "relative w-full overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.15)]",
+          "index": 7,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[16/9] relative",
+          "position": {
+            "height": 640,
+            "width": 1137,
+            "x": 64,
+            "y": 3110
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-spa.jpg",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Weiteres Badezimmer-Projekt",
+          "aspectRatio": "16 / 9",
+          "className": "absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0 z-0",
+          "grandparentClass": "relative w-full overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.15)]",
+          "index": 8,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[16/9] relative",
+          "position": {
+            "height": 640,
+            "width": 1137,
+            "x": 64,
+            "y": 3110
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-bath2.jpg",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Modernes Badezimmer mit modernem Design",
+          "aspectRatio": "16 / 9",
+          "className": "absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0 z-0",
+          "grandparentClass": "relative w-full overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.15)]",
+          "index": 9,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[16/9] relative",
+          "position": {
+            "height": 640,
+            "width": 1137,
+            "x": 64,
+            "y": 3110
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/0e743ad8-591a-4a1d-a384-87e242afa731.png",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Unfertig gestaltetes modernes Badezimmer",
+          "aspectRatio": "16 / 9",
+          "className": "absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0 z-0",
+          "grandparentClass": "relative w-full overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.15)]",
+          "index": 10,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[16/9] relative",
+          "position": {
+            "height": 640,
+            "width": 1137,
+            "x": 64,
+            "y": 3110
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/7868a774-ec3f-4969-8345-da94e4ad4009.png",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Minimalist Badezimmer mit natürlichem Licht (1)",
+          "aspectRatio": "16 / 9",
+          "className": "absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0 z-0",
+          "grandparentClass": "relative w-full overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.15)]",
+          "index": 11,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[16/9] relative",
+          "position": {
+            "height": 640,
+            "width": 1137,
+            "x": 64,
+            "y": 3110
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/a43779f2-33f9-4280-952f-f42985ba40b9.png",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Moderner Badezimmerbereich mit Doppelwaschbecken",
+          "aspectRatio": "16 / 9",
+          "className": "absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0 z-0",
+          "grandparentClass": "relative w-full overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.15)]",
+          "index": 12,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[16/9] relative",
+          "position": {
+            "height": 640,
+            "width": 1137,
+            "x": 64,
+            "y": 3110
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/e62a5866-1a0e-4dfa-bf13-5d7cbb43c393.png",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Moderne Dachboden-Badezimmeransicht",
+          "aspectRatio": "16 / 9",
+          "className": "absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0 z-0",
+          "grandparentClass": "relative w-full overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.15)]",
+          "index": 13,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[16/9] relative",
+          "position": {
+            "height": 640,
+            "width": 1137,
+            "x": 64,
+            "y": 3110
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/02e4b4ba-44ce-47e8-91e5-b6ce700477e8.png",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Moderne Dachbodenbadezimmer mit Badewanne",
+          "aspectRatio": "16 / 9",
+          "className": "absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0 z-0",
+          "grandparentClass": "relative w-full overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.15)]",
+          "index": 14,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[16/9] relative",
+          "position": {
+            "height": 640,
+            "width": 1137,
+            "x": 64,
+            "y": 3110
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/743f89be-29aa-401b-a774-ac6913e0d25f.png",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Modernes Badezimmer mit Fliesendesign",
+          "aspectRatio": "16 / 9",
+          "className": "absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0 z-0",
+          "grandparentClass": "relative w-full overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.15)]",
+          "index": 15,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[16/9] relative",
+          "position": {
+            "height": 640,
+            "width": 1137,
+            "x": 64,
+            "y": 3110
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/7fc927f8-0b7d-4f29-866f-93db21df8b34.png",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Vorschau 1",
+          "aspectRatio": "4 / 3",
+          "className": "w-full h-full object-cover",
+          "grandparentClass": "relative overflow-hidden rounded-xl transition-all duration-500 ring-1 ring-white/10 opacity-60 hover:opacity-90",
+          "index": 16,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[4/3]",
+          "position": {
+            "height": 38,
+            "width": 50,
+            "x": 205,
+            "y": 3806
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-bathroom.jpg",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Vorschau 2",
+          "aspectRatio": "4 / 3",
+          "className": "w-full h-full object-cover",
+          "grandparentClass": "relative overflow-hidden rounded-xl transition-all duration-500 ring-1 ring-white/10 opacity-60 hover:opacity-90",
+          "index": 17,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[4/3]",
+          "position": {
+            "height": 38,
+            "width": 50,
+            "x": 267,
+            "y": 3806
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-wc.jpg",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Vorschau 3",
+          "aspectRatio": "4 / 3",
+          "className": "w-full h-full object-cover",
+          "grandparentClass": "relative overflow-hidden rounded-xl transition-all duration-500 ring-1 ring-white/10 opacity-60 hover:opacity-90",
+          "index": 18,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[4/3]",
+          "position": {
+            "height": 38,
+            "width": 50,
+            "x": 329,
+            "y": 3806
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-floor.jpg",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Vorschau 4",
+          "aspectRatio": "4 / 3",
+          "className": "w-full h-full object-cover",
+          "grandparentClass": "relative overflow-hidden rounded-xl transition-all duration-500 ring-2 ring-primary scale-105",
+          "index": 19,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[4/3]",
+          "position": {
+            "height": 39,
+            "width": 53,
+            "x": 389,
+            "y": 3805
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-detail.jpg",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Vorschau 5",
+          "aspectRatio": "4 / 3",
+          "className": "w-full h-full object-cover",
+          "grandparentClass": "relative overflow-hidden rounded-xl transition-all duration-500 ring-1 ring-white/10 opacity-60 hover:opacity-90",
+          "index": 20,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[4/3]",
+          "position": {
+            "height": 38,
+            "width": 50,
+            "x": 453,
+            "y": 3806
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-kitchen.jpg",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Vorschau 6",
+          "aspectRatio": "4 / 3",
+          "className": "w-full h-full object-cover",
+          "grandparentClass": "relative overflow-hidden rounded-xl transition-all duration-500 ring-1 ring-white/10 opacity-60 hover:opacity-90",
+          "index": 21,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[4/3]",
+          "position": {
+            "height": 38,
+            "width": 50,
+            "x": 515,
+            "y": 3806
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-spa.jpg",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Vorschau 7",
+          "aspectRatio": "4 / 3",
+          "className": "w-full h-full object-cover",
+          "grandparentClass": "relative overflow-hidden rounded-xl transition-all duration-500 ring-1 ring-white/10 opacity-60 hover:opacity-90",
+          "index": 22,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[4/3]",
+          "position": {
+            "height": 38,
+            "width": 50,
+            "x": 577,
+            "y": 3806
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/project-bath2.jpg",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Vorschau 8",
+          "aspectRatio": "4 / 3",
+          "className": "w-full h-full object-cover",
+          "grandparentClass": "relative overflow-hidden rounded-xl transition-all duration-500 ring-1 ring-white/10 opacity-60 hover:opacity-90",
+          "index": 23,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[4/3]",
+          "position": {
+            "height": 38,
+            "width": 50,
+            "x": 639,
+            "y": 3806
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/0e743ad8-591a-4a1d-a384-87e242afa731.png",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Vorschau 9",
+          "aspectRatio": "4 / 3",
+          "className": "w-full h-full object-cover",
+          "grandparentClass": "relative overflow-hidden rounded-xl transition-all duration-500 ring-1 ring-white/10 opacity-60 hover:opacity-90",
+          "index": 24,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[4/3]",
+          "position": {
+            "height": 38,
+            "width": 50,
+            "x": 701,
+            "y": 3806
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/7868a774-ec3f-4969-8345-da94e4ad4009.png",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Vorschau 10",
+          "aspectRatio": "4 / 3",
+          "className": "w-full h-full object-cover",
+          "grandparentClass": "relative overflow-hidden rounded-xl transition-all duration-500 ring-1 ring-white/10 opacity-60 hover:opacity-90",
+          "index": 25,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[4/3]",
+          "position": {
+            "height": 38,
+            "width": 50,
+            "x": 763,
+            "y": 3806
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/a43779f2-33f9-4280-952f-f42985ba40b9.png",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Vorschau 11",
+          "aspectRatio": "4 / 3",
+          "className": "w-full h-full object-cover",
+          "grandparentClass": "relative overflow-hidden rounded-xl transition-all duration-500 ring-1 ring-white/10 opacity-60 hover:opacity-90",
+          "index": 26,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[4/3]",
+          "position": {
+            "height": 38,
+            "width": 50,
+            "x": 825,
+            "y": 3806
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/e62a5866-1a0e-4dfa-bf13-5d7cbb43c393.png",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Vorschau 12",
+          "aspectRatio": "4 / 3",
+          "className": "w-full h-full object-cover",
+          "grandparentClass": "relative overflow-hidden rounded-xl transition-all duration-500 ring-1 ring-white/10 opacity-60 hover:opacity-90",
+          "index": 27,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[4/3]",
+          "position": {
+            "height": 38,
+            "width": 50,
+            "x": 887,
+            "y": 3806
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/02e4b4ba-44ce-47e8-91e5-b6ce700477e8.png",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Vorschau 13",
+          "aspectRatio": "4 / 3",
+          "className": "w-full h-full object-cover",
+          "grandparentClass": "relative overflow-hidden rounded-xl transition-all duration-500 ring-1 ring-white/10 opacity-60 hover:opacity-90",
+          "index": 28,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[4/3]",
+          "position": {
+            "height": 38,
+            "width": 50,
+            "x": 949,
+            "y": 3806
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/743f89be-29aa-401b-a774-ac6913e0d25f.png",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Vorschau 14",
+          "aspectRatio": "4 / 3",
+          "className": "w-full h-full object-cover",
+          "grandparentClass": "relative overflow-hidden rounded-xl transition-all duration-500 ring-1 ring-white/10 opacity-60 hover:opacity-90",
+          "index": 29,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "aspect-[4/3]",
+          "position": {
+            "height": 38,
+            "width": 50,
+            "x": 1011,
+            "y": 3806
+          },
+          "poster": "",
+          "section": "projekte",
+          "sectionId": "projekte",
+          "src": "https://njbyqzvrilnluxppmslx.supabase.co/storage/v1/object/public/gallery-images/7fc927f8-0b7d-4f29-866f-93db21df8b34.png",
+          "tag": "IMG"
+        }
+      ],
+      "title": "Fliesenleger Cloppenburg | Fliesen Miller",
+      "url": "https://fliesen-miller.de/"
+    },
+    {
+      "backgrounds": [],
+      "images": [],
+      "title": "Leistungen Fliesenleger Cloppenburg | Fliesen Miller",
+      "url": "https://fliesen-miller.de/leistungen"
+    },
+    {
+      "backgrounds": [],
+      "images": [],
+      "title": "Fliesenreparatur & Versicherungsschäden | Fliesen Miller",
+      "url": "https://fliesen-miller.de/reparatur"
+    },
+    {
+      "backgrounds": [],
+      "images": [],
+      "title": "Über Fliesen Miller – Fliesenleger aus Cloppenburg",
+      "url": "https://fliesen-miller.de/ueber-uns"
+    },
+    {
+      "backgrounds": [],
+      "images": [
+        {
+          "alt": "Professionelle Fliesenverlegung in Cloppenburg",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover",
+          "grandparentClass": "grid lg:grid-cols-2 gap-12 lg:gap-16 items-center",
+          "index": 0,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3]",
+          "position": {
+            "height": 402,
+            "width": 537,
+            "x": 665,
+            "y": 268
+          },
+          "poster": "",
+          "section": "Fliesenleger in Cloppenburg – sauber ausgeführt",
+          "sectionId": "",
+          "src": "/assets/hero-cloppenburg-Ck7kAAvI.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Premium Fliesenverlegung – Gehrungsschnitte und Großformat",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover",
+          "grandparentClass": "grid lg:grid-cols-2 gap-12 lg:gap-16 items-center",
+          "index": 1,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3]",
+          "position": {
+            "height": 402,
+            "width": 537,
+            "x": 64,
+            "y": 1617
+          },
+          "poster": "",
+          "section": "Für Kunden, die Wert auf ein sauberes Gesamtbild legen",
+          "sectionId": "",
+          "src": "/assets/project-detail-CUWa47wD.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Fertiggestelltes Badezimmer – Fliesenleger Cloppenburg",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover group-hover:scale-105 transition-transform duration-500",
+          "grandparentClass": "group",
+          "index": 2,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "relative rounded-lg overflow-hidden aspect-[4/3] mb-3",
+          "position": {
+            "height": 272,
+            "width": 363,
+            "x": 64,
+            "y": 2901
+          },
+          "poster": "",
+          "section": "Projekte aus Cloppenburg und Umgebung",
+          "sectionId": "",
+          "src": "/assets/project-bathroom-Fdi2zzNJ.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Bodenfliesen Verlegung Cloppenburg",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover group-hover:scale-105 transition-transform duration-500",
+          "grandparentClass": "group",
+          "index": 3,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "relative rounded-lg overflow-hidden aspect-[4/3] mb-3",
+          "position": {
+            "height": 272,
+            "width": 363,
+            "x": 451,
+            "y": 2901
+          },
+          "poster": "",
+          "section": "Projekte aus Cloppenburg und Umgebung",
+          "sectionId": "",
+          "src": "/assets/project-floor-CW32s5FR.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Detailaufnahme Kanten und Fugen",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover group-hover:scale-105 transition-transform duration-500",
+          "grandparentClass": "group",
+          "index": 4,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "relative rounded-lg overflow-hidden aspect-[4/3] mb-3",
+          "position": {
+            "height": 272,
+            "width": 363,
+            "x": 838,
+            "y": 2901
+          },
+          "poster": "",
+          "section": "Projekte aus Cloppenburg und Umgebung",
+          "sectionId": "",
+          "src": "/assets/project-detail-CUWa47wD.webp",
+          "tag": "IMG"
+        }
+      ],
+      "title": "Fliesenleger Cloppenburg – Bad, Boden & Großformat | Fliesen Miller",
+      "url": "https://fliesen-miller.de/fliesenleger-cloppenburg"
+    },
+    {
+      "backgrounds": [],
+      "images": [
+        {
+          "alt": "Professionelle Fliesenverlegung in Vechta – fertiggestellter Wohnbereich",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover",
+          "grandparentClass": "grid lg:grid-cols-2 gap-12 lg:gap-16 items-center",
+          "index": 0,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3]",
+          "position": {
+            "height": 402,
+            "width": 537,
+            "x": 665,
+            "y": 312
+          },
+          "poster": "",
+          "section": "Fliesenleger in Vechta – präzise Verlegung, zuverlässige Termine",
+          "sectionId": "",
+          "src": "/assets/project-floor-CW32s5FR.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Premium Fliesenverlegung Vechta – Großformat und Gehrungsschnitte",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover",
+          "grandparentClass": "grid lg:grid-cols-2 gap-12 lg:gap-16 items-center",
+          "index": 1,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3]",
+          "position": {
+            "height": 402,
+            "width": 537,
+            "x": 665,
+            "y": 1822
+          },
+          "poster": "",
+          "section": "Anspruchsvolle Fliesenarbeiten für Vechta",
+          "sectionId": "",
+          "src": "/assets/project-premium-BdCPae-2.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Badezimmer-Projekt in Vechta – Fliesen Miller",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover group-hover:scale-105 transition-transform duration-500",
+          "grandparentClass": "group",
+          "index": 2,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3] mb-3",
+          "position": {
+            "height": 272,
+            "width": 363,
+            "x": 64,
+            "y": 3136
+          },
+          "poster": "",
+          "section": "Arbeiten aus der Region Vechta",
+          "sectionId": "",
+          "src": "/assets/project-bathroom-Fdi2zzNJ.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Bodenbelag Verlegung Vechta",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover group-hover:scale-105 transition-transform duration-500",
+          "grandparentClass": "group",
+          "index": 3,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3] mb-3",
+          "position": {
+            "height": 272,
+            "width": 363,
+            "x": 451,
+            "y": 3136
+          },
+          "poster": "",
+          "section": "Arbeiten aus der Region Vechta",
+          "sectionId": "",
+          "src": "/assets/project-floor-CW32s5FR.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Fliesendetail Kanten – Fliesen Miller Vechta",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover group-hover:scale-105 transition-transform duration-500",
+          "grandparentClass": "group",
+          "index": 4,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3] mb-3",
+          "position": {
+            "height": 272,
+            "width": 363,
+            "x": 838,
+            "y": 3136
+          },
+          "poster": "",
+          "section": "Arbeiten aus der Region Vechta",
+          "sectionId": "",
+          "src": "/assets/project-detail-CUWa47wD.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Fliesenarbeiten in Vechta und Umgebung",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover",
+          "grandparentClass": "grid lg:grid-cols-2 gap-12 items-center",
+          "index": 5,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3]",
+          "position": {
+            "height": 408,
+            "width": 545,
+            "x": 64,
+            "y": 4217
+          },
+          "poster": "",
+          "section": "Von Cloppenburg nach Vechta – und in die ganze Region",
+          "sectionId": "",
+          "src": "/assets/project-kitchen-CKiyTFfq.webp",
+          "tag": "IMG"
+        }
+      ],
+      "title": "Fliesenleger Vechta – präzise Verlegung | Fliesen Miller",
+      "url": "https://fliesen-miller.de/fliesenleger-vechta"
+    },
+    {
+      "backgrounds": [],
+      "images": [
+        {
+          "alt": "Professionelle Fliesenverlegung in Bremen – modernes Badezimmer",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover",
+          "grandparentClass": "grid lg:grid-cols-2 gap-12 lg:gap-16 items-center",
+          "index": 0,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3]",
+          "position": {
+            "height": 402,
+            "width": 537,
+            "x": 665,
+            "y": 337
+          },
+          "poster": "",
+          "section": "Fliesenleger in Bremen – Qualität aus dem Oldenburger Münsterland",
+          "sectionId": "",
+          "src": "/assets/project-bathroom-Fdi2zzNJ.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Premium Fliesenverlegung Bremen – XXL-Format und Gehrungsschnitte",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover",
+          "grandparentClass": "grid lg:grid-cols-2 gap-12 lg:gap-16 items-center",
+          "index": 1,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3]",
+          "position": {
+            "height": 402,
+            "width": 537,
+            "x": 64,
+            "y": 1883
+          },
+          "poster": "",
+          "section": "Premium-Fliesenarbeiten in Bremen",
+          "sectionId": "",
+          "src": "/assets/project-premium-BdCPae-2.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Badsanierung Bremen – Fliesen Miller",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover group-hover:scale-105 transition-transform duration-500",
+          "grandparentClass": "group",
+          "index": 2,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3] mb-3",
+          "position": {
+            "height": 272,
+            "width": 363,
+            "x": 64,
+            "y": 3220
+          },
+          "poster": "",
+          "section": "Projekte in Bremen und Umgebung",
+          "sectionId": "",
+          "src": "/assets/project-bathroom-Fdi2zzNJ.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Küchenfliesen Bremen",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover group-hover:scale-105 transition-transform duration-500",
+          "grandparentClass": "group",
+          "index": 3,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3] mb-3",
+          "position": {
+            "height": 272,
+            "width": 363,
+            "x": 451,
+            "y": 3220
+          },
+          "poster": "",
+          "section": "Projekte in Bremen und Umgebung",
+          "sectionId": "",
+          "src": "/assets/project-kitchen-CKiyTFfq.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Fliesendetail Gehrungsschnitt Bremen",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover group-hover:scale-105 transition-transform duration-500",
+          "grandparentClass": "group",
+          "index": 4,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3] mb-3",
+          "position": {
+            "height": 272,
+            "width": 363,
+            "x": 838,
+            "y": 3220
+          },
+          "poster": "",
+          "section": "Projekte in Bremen und Umgebung",
+          "sectionId": "",
+          "src": "/assets/project-detail-CUWa47wD.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Fliesenarbeiten in Bremen und Umgebung",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover",
+          "grandparentClass": "grid lg:grid-cols-2 gap-12 items-center",
+          "index": 5,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3]",
+          "position": {
+            "height": 408,
+            "width": 545,
+            "x": 657,
+            "y": 4326
+          },
+          "poster": "",
+          "section": "Unser Einzugsgebiet rund um Bremen",
+          "sectionId": "",
+          "src": "/assets/project-floor-CW32s5FR.webp",
+          "tag": "IMG"
+        }
+      ],
+      "title": "Fliesenleger Bremen – Bad, Boden & Großformat | Fliesen Miller",
+      "url": "https://fliesen-miller.de/fliesenleger-bremen"
+    },
+    {
+      "backgrounds": [],
+      "images": [
+        {
+          "alt": "Professionelle Fliesenverlegung in Osnabrück – Küchenbereich",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover",
+          "grandparentClass": "grid lg:grid-cols-2 gap-12 lg:gap-16 items-center",
+          "index": 0,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3]",
+          "position": {
+            "height": 402,
+            "width": 537,
+            "x": 665,
+            "y": 337
+          },
+          "poster": "",
+          "section": "Fliesenleger in Osnabrück – handwerkliche Präzision aus dem Münsterland",
+          "sectionId": "",
+          "src": "/assets/project-kitchen-CKiyTFfq.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Premium Fliesenverlegung Osnabrück – rahmenlose Optik",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover",
+          "grandparentClass": "grid lg:grid-cols-2 gap-12 lg:gap-16 items-center",
+          "index": 1,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3]",
+          "position": {
+            "height": 402,
+            "width": 537,
+            "x": 665,
+            "y": 1872
+          },
+          "poster": "",
+          "section": "Premium-Verlegung in Osnabrück",
+          "sectionId": "",
+          "src": "/assets/project-premium-BdCPae-2.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Badsanierung Osnabrück – Fliesen Miller",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover group-hover:scale-105 transition-transform duration-500",
+          "grandparentClass": "group",
+          "index": 2,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3] mb-3",
+          "position": {
+            "height": 272,
+            "width": 363,
+            "x": 64,
+            "y": 3209
+          },
+          "poster": "",
+          "section": "Referenzprojekte aus dem Raum Osnabrück",
+          "sectionId": "",
+          "src": "/assets/project-bathroom-Fdi2zzNJ.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Bodenfliesen Osnabrück – Großformat",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover group-hover:scale-105 transition-transform duration-500",
+          "grandparentClass": "group",
+          "index": 3,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3] mb-3",
+          "position": {
+            "height": 272,
+            "width": 363,
+            "x": 451,
+            "y": 3209
+          },
+          "poster": "",
+          "section": "Referenzprojekte aus dem Raum Osnabrück",
+          "sectionId": "",
+          "src": "/assets/project-floor-CW32s5FR.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Fliesendetail Osnabrück – saubere Gehrung",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover group-hover:scale-105 transition-transform duration-500",
+          "grandparentClass": "group",
+          "index": 4,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3] mb-3",
+          "position": {
+            "height": 272,
+            "width": 363,
+            "x": 838,
+            "y": 3209
+          },
+          "poster": "",
+          "section": "Referenzprojekte aus dem Raum Osnabrück",
+          "sectionId": "",
+          "src": "/assets/project-detail-CUWa47wD.webp",
+          "tag": "IMG"
+        },
+        {
+          "alt": "Fliesenverlegung Region Osnabrück",
+          "aspectRatio": "4 / 3",
+          "className": "gallery-image w-full h-full object-cover",
+          "grandparentClass": "grid lg:grid-cols-2 gap-12 items-center",
+          "index": 5,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "order": "0",
+          "parentClass": "rounded-lg overflow-hidden aspect-[4/3]",
+          "position": {
+            "height": 408,
+            "width": 545,
+            "x": 64,
+            "y": 4291
+          },
+          "poster": "",
+          "section": "Unser Einsatzgebiet rund um Osnabrück",
+          "sectionId": "",
+          "src": "/assets/project-floor-CW32s5FR.webp",
+          "tag": "IMG"
+        }
+      ],
+      "title": "Fliesenleger Osnabrück – handwerkliche Präzision | Fliesen Miller",
+      "url": "https://fliesen-miller.de/fliesenleger-osnabrueck"
+    },
+    {
+      "backgrounds": [],
+      "images": [],
+      "title": "Impressum | Fliesen Miller Cloppenburg",
+      "url": "https://fliesen-miller.de/impressum"
+    },
+    {
+      "backgrounds": [],
+      "images": [],
+      "title": "Datenschutzerklärung | Fliesen Miller",
+      "url": "https://fliesen-miller.de/datenschutz"
+    },
+    {
+      "backgrounds": [],
+      "images": [],
+      "title": "AGB | Fliesen Miller",
+      "url": "https://fliesen-miller.de/agb"
+    }
+  ]
+}

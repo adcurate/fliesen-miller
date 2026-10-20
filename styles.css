@@ -331,3 +331,25 @@ body:has(.services-page) .footer-grid a[href="/#anfrage"]{color:var(--green)}
 .google-reviews-footer .text-link{color:var(--green);font-size:13px;margin-top:0}
 @media(max-width:1000px){.google-reviews-heading{align-items:flex-start;flex-direction:column;gap:16px}.google-rating-summary{padding-block:8px}.google-review{padding:24px}}
 @media(max-width:760px){.google-review-grid{grid-template-columns:1fr;gap:16px}.google-reviews-heading{margin-bottom:24px}.google-review blockquote{margin-bottom:16px}.google-reviews-footer{align-items:flex-start;flex-direction:column;gap:16px}}
+
+/* Match the photographed areas and image placement of the original website. */
+.original-hero{height:100svh;min-height:0;max-height:none}
+.original-hero .hero-background{object-position:50% 50%}
+.original-services .original-service{display:flex;flex-direction:column}
+.original-service-copy{width:100%}
+.page-hero-text .page-hero-grid{display:block}
+.page-hero-text:not(.compact) .page-hero-grid{max-width:960px}
+.original-premium-layout{position:relative;padding:0;background:var(--bg)}
+.original-premium-layout>.premium-media{width:100%;height:60vh;min-height:0;max-height:none;border-radius:0}
+.original-premium-layout>.premium-media::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top,var(--bg),#12121266 60%,transparent)}
+.original-premium-layout .premium-grid{position:relative;z-index:1;display:block;margin-top:-128px;padding-block:var(--section)}
+.original-premium-layout .premium-copy{max-width:672px}
+.original-premium-layout .original-premium-facts{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.original-premium-layout .original-premium-facts>div{align-items:flex-start}
+.original-premium-layout .original-premium-facts .icon{flex-shrink:0}
+.reference-thumbs{display:flex;justify-content:center;gap:12px;margin-top:24px;padding:3px}
+.reference-thumbs button{flex:0 1 64px;min-width:0;aspect-ratio:4/3}
+.reference-thumbs img{aspect-ratio:4/3}
+.region-image{aspect-ratio:4/3}
+@media(max-width:1023px){.region-split{grid-template-columns:1fr;gap:48px}}
+@media(max-width:767px){.original-premium-layout>.premium-media{height:50vh}.original-premium-layout .premium-grid{padding-block:48px}.original-premium-layout .original-premium-facts{grid-template-columns:1fr;gap:20px}.reference-thumbs{display:none}}
