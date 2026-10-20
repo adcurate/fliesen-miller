@@ -1,9 +1,9 @@
 import { Icon } from "./Icons";
-import { LinkArrow } from "./Shared";
-import { TypingWord, PremiumVideo, ReferenceCarousel } from "./OriginalMotion";
+import { WorkGallery } from "./WorkGallery";
+import { TypingWord, PremiumVideo } from "./OriginalMotion";
 export function Hero() {
   return <><section className="original-hero"><img className="hero-background" src="/media/hero-original.webp" alt="Präzise verlegte Fliesen von Fliesen Miller" width="1024" height="1536" fetchPriority="high" /><div className="hero-shade" /><div className="container original-hero-copy"><h1><TypingWord /></h1><div className="hero-buttons"><a href="#anfrage" className="button inquiry-button">Projekt anfragen</a><a href="#projekte" className="button button-outline">Referenzen ansehen<Icon name="arrow" /></a></div></div><a className="hero-scroll" href="#leistungen" aria-label="Leistungen entdecken"><Icon name="chevron" /></a></section><section className="home-introduction"><div className="container"><p>Ihr Fliesenleger aus Cloppenburg für Bad, Boden und Küche. Von der klassischen Verlegung bis zu Großformat und Gehrungsschnitten – auch für Reparaturen und Versicherungsschäden.</p></div></section></>;
 }
 export { ServiceOverview } from "./ServiceCards";
 export function Premium() { return <section className="premium-section original-premium-layout" id="premium"><div className="premium-media"><PremiumVideo /></div><div className="container premium-grid"><div className="premium-copy"><h2>Großformat & Gehrung</h2><p>Große Flächen, präzise Gehrungsschnitte und saubere Übergänge – für ein ruhiges Gesamtbild.</p><div className="original-premium-facts">{[["Großformat","Verlegung bis 320 cm"],["Saubere Kanten","Präzise Gehrung"],["Ruhiges Bild","Wie aus einem Guss"]].map(([title,desc])=><div key={title}><Icon name="check" /><div><h3>{title}</h3><p>{desc}</p></div></div>)}</div><a href="/#anfrage" className="button inquiry-button">Premium-Projekt besprechen</a></div></div></section>; }
-export function Projects() { return <section className="section projects-section" id="projekte"><div className="container"><div className="section-heading"><h2>Referenzen</h2><LinkArrow href="/referenzen">Alle Referenzen</LinkArrow></div><ReferenceCarousel /></div></section>; }
+export function Projects() { return <WorkGallery />; }

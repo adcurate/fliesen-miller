@@ -2,7 +2,7 @@ import { createElement, Fragment, type ReactNode } from "react";
 import source from "@/content/source.json";
 import { PageHero, CTA, LinkArrow, ContactSection, Regions, FAQ, Values, LocationSection } from "./Shared";
 import { Icon } from "./Icons";
-import { ReferenceCarousel } from "./OriginalMotion";
+import { WorkGallery } from "./WorkGallery";
 import { FunnelSection } from "./Funnel";
 import { GoogleReviews } from "./GoogleReviews";
 export { RegionPage as CityPage } from "./RegionPage";
@@ -69,5 +69,5 @@ export function LegalPage({slug}:{slug:string}){
   const titles:Record<string,string>={impressum:"Impressum",datenschutz:"Datenschutzerklärung",agb:"Allgemeine Geschäftsbedingungen"};
   return <section className="section legal-page"><div className="container legal-layout"><aside><a href="/">← Zur Startseite</a><nav aria-label="Rechtliche Informationen">{["impressum","datenschutz","agb"].map(key=><a key={key} href={`/${key}`} aria-current={key===slug?"page":undefined}>{titles[key]}</a>)}</nav></aside><article className="legal-content"><h1>{titles[slug]}</h1><RichSource node={mainOf(route)} legal /></article></div></section>;
 }
-export function ReferencePage(){return <><PageHero compact eyebrow="Referenzen" title="Referenzen" intro="" /><section className="section gallery-section"><div className="container"><ReferenceCarousel /></div></section><CTA /></>;}
+export function ReferencePage(){return <><PageHero compact eyebrow="Referenzen" title="Arbeitsgalerie" intro="Bäder, Böden und Fliesendetails aus unseren Projekten." /><WorkGallery standalone /><CTA /></>;}
 export function ContactPage(){return <><PageHero compact eyebrow="Erreichbarkeit" title="Kontakt" intro="" /><ContactSection /><Regions /><CTA /></>;}
