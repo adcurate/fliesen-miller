@@ -39,6 +39,10 @@ function escapeHtml(value: string) {
   })[character]!);
 }
 
+function mailtoAddress(value: string) {
+  return encodeURIComponent(value).replace(/%40/gi, "@");
+}
+
 function valueLabel(labels: Record<string, string>, value: string) {
   return labels[value] || value || "Nicht angegeben";
 }
@@ -89,14 +93,14 @@ function emailContent(inquiry: InquiryRecord, attachments: InquiryAttachment[], 
   </tr>`).join("");
   const safePhone = inquiry.phone.replace(/[^\d+]/g, "");
   const responseUrl = inquiry.email
-    ? `mailto:${inquiry.email}?subject=${encodeURIComponent(`Ihre Projektanfrage bei Fliesen Miller (${reference})`)}`
+    ? `mailto:${mailtoAddress(inquiry.email)}?subject=${encodeURIComponent(`Ihre Projektanfrage bei Fliesen Miller (${reference})`)}`
     : `tel:${safePhone}`;
   const responseLabel = inquiry.email ? "Per E-Mail antworten" : "Interessenten anrufen";
   const htmlContactRows = contacts.map(([label, value]) => {
     const linkedValue = label === "Telefon"
       ? `<a href="tel:${escapeHtml(safePhone)}" style="color:#8cc53f;text-decoration:none">${escapeHtml(value)}</a>`
       : label === "E-Mail"
-        ? `<a href="mailto:${escapeHtml(inquiry.email)}" style="color:#8cc53f;text-decoration:none">${escapeHtml(value)}</a>`
+        ? `<a href="mailto:${mailtoAddress(inquiry.email)}" style="color:#8cc53f;text-decoration:none">${escapeHtml(value)}</a>`
         : escapeHtml(value);
     return `<tr><td bgcolor="#171a14" style="padding:10px 14px;border-top:1px solid #34392f;color:#a5a99e;font:12px/1.5 Arial,Helvetica,sans-serif;vertical-align:top;width:34%;background-color:#171a14">${escapeHtml(label)}</td><td bgcolor="#171a14" style="padding:10px 14px;border-top:1px solid #34392f;color:#f0f1ed;font:13px/1.6 Arial,Helvetica,sans-serif;overflow-wrap:anywhere;background-color:#171a14">${linkedValue}</td></tr>`;
   }).join("");
@@ -198,3 +202,4 @@ export async function sendInquiryNotification(inquiry: InquiryRecord, attachment
     return "failed";
   }
 }
+
