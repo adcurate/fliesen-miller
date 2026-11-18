@@ -28,7 +28,7 @@ export function PremiumVideo(){
     const video=ref.current;if(!video)return;
     const media=window.matchMedia("(prefers-reduced-motion: reduce)");let visible=false;
     function sync(){if(!video)return;if(visible&&document.visibilityState==="visible"&&!userPaused.current&&!media.matches)void video.play().catch(()=>{});else video.pause();}
-    function load(){if(!video||video.getAttribute("src"))return;video.src=import.meta.env.BASE_URL+"media/gehrungsschnitt.mp4";video.preload="auto";video.load();}
+    function load(){if(!video||video.getAttribute("src"))return;video.src="/media/gehrungsschnitt.mp4";video.preload="auto";video.load();}
     function metadata(){if(video)video.playbackRate=.85;sync();}
     function fade(){if(video)video.style.opacity=String(Math.min(1,Math.max(0,video.duration-video.currentTime)));}
     const loader=typeof IntersectionObserver!=="undefined"?new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){load();loader?.disconnect();}},{rootMargin:"300px 0px"}):null;

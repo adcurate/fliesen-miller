@@ -6,7 +6,7 @@ export const site = {
   email: "info@fliesen-miller.de",
   street: "Anne-Frank-Ring 5",
   city: "49661 Cloppenburg",
-  url: "https://adcurate.github.io/fliesen-miller",
+  url: "https://fliesen-miller.de",
   instagram: "https://www.instagram.com/fliesenmillerclp/",
 };
 export const cities = [

@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { usePathname } from "@/preview/navigation";
+import { usePathname } from "next/navigation";
 import { cities, site } from "@/lib/site";
 import { Icon } from "./Icons";
 export function Header() {

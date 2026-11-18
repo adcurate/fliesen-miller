@@ -31,7 +31,7 @@ export function CookiePanel() {
   }
   if (!visible) return null;
   return <aside className="cookie-panel" aria-label="Datenschutz-Einstellungen"><div className="cookie-heading"><Icon name="tile" /><strong>Datenschutz-Einstellungen</strong></div>
-    <p>Diese Vorschau speichert Ihre Datenschutz-Auswahl im Browser. Mit Ihrer Einwilligung werden Herkunftsangaben nur für die Dauer dieses Besuchs lokal gespeichert. Es werden keine Anfragen oder Analysedaten an einen Server versendet. Ihre Auswahl können Sie jederzeit im Footer ändern.</p>
+    <p>{source.consent.text}</p>
     {settings && <div className="consent-options"><label><input type="checkbox" checked readOnly disabled /> Notwendig <small>Immer aktiv</small></label><label><input type="checkbox" checked={analytics} onChange={e => setAnalytics(e.target.checked)} /> Herkunftsanalyse (Kampagnen-/Herkunftsdaten)</label></div>}
     <a href="/datenschutz" className="text-link small">Mehr zum Datenschutz<Icon name="arrowUp" /></a>
     <div className="cookie-actions"><button className="button" onClick={() => save(true)}>Alle akzeptieren</button><button className="button button-outline" onClick={() => save(false)}>Alle ablehnen</button>{settings ? <button className="cookie-settings" onClick={() => save(analytics)}>Auswahl speichern</button> : <button className="cookie-settings" onClick={() => setSettings(true)}>Einstellungen</button>}</div>
