@@ -56,7 +56,9 @@ Die Browserprüfung umfasst die öffentlichen Seiten bei tatsächlichen CSS-Brei
 
 `content/region-original-audit.json` hält den erneuten Abgleich aller vier Original-Ortsseiten fest. Deren zugehörige Originalbilder liegen lokal in `public/media/regions/`. Der regionale Renderer erhält auch verschachtelte Ortsverlinkungen und übernimmt die unterschiedlichen Inhalte je Stadt. Der eigene Funnel bleibt derselbe wie auf der Startseite.
 
-Die Website und ihr Anfrage-Endpunkt laufen als Cloudflare Worker. Vor dem ersten Deployment `SMTP_USERNAME`, `SMTP_PASSWORD`, `INQUIRY_EMAIL_TO`, `INQUIRY_EMAIL_FROM`, `SITE_URL` und `SEO_INDEXING_ENABLED` in den Worker-Einstellungen setzen; das Mailbox-Passwort als Geheimnis hinterlegen. Danach mit `npm run deploy` veröffentlichen. Es ist kein Supabase-Projekt erforderlich.
+Die Website und ihr Anfrage-Endpunkt laufen als Cloudflare Worker. Der Produktionsstand liegt im GitHub-Repository `adcurate/fliesen-miller` auf dem Branch `production-cloudflare`; der bestehende Vorschau-Branch `main` bleibt unverändert. In Cloudflare Workers Builds den Branch `production-cloudflare`, den Build-Befehl `npm run build` und den Deploy-Befehl `npx wrangler deploy --config dist/server/wrangler.json` verwenden. Der Worker-Name lautet `fliesen-miller-website`.
+
+Vor dem ersten echten Versand in den Worker-Einstellungen `SMTP_USERNAME`, `SMTP_PASSWORD`, `INQUIRY_EMAIL_TO`, `INQUIRY_EMAIL_FROM`, `SITE_URL` und `SEO_INDEXING_ENABLED` setzen. `SMTP_PASSWORD` als verschlüsseltes Geheimnis speichern. Für den Mailversand das aktive one.com-Postfach `info@fliesen-miller.de` verwenden; Anfragen gehen standardmäßig an dasselbe Postfach. Es wird kein Supabase-Projekt und keine Kundendatenbank benötigt.
 
 Die neue Site wird zunächst privat bereitgestellt. `robots.txt` und Metadaten verhindern die Indexierung der privaten Neufassung. Die Originaldomain wird durch dieses Projekt nicht verändert.
 
@@ -79,3 +81,4 @@ Die Arbeitsgalerie enthält 47 Fotos; die Logo-Collage ist entfernt. Vier gegenl
 `InPageNavigation` erhält die echten Seitenlinks für Suchmaschinen, fängt aber normale Klicks innerhalb derselben Seite ab. Erneute Klicks auf eine Seitenadresse scrollen nach oben; Sprungmarken scrollen zum passenden Abschnitt. „Projekt anfragen“ nutzt einen bereits eingebetteten Funnel. Andere Seiten, neue Formularparameter, neue Tabs, Downloads und externe Links behalten ihre normale Navigation. Premium und Referenzen verwenden denselben Funnel wie die Startseite.
 
 Die Google-Bewertungen werden lokal in Google-Farben dargestellt. Logo und G-Symbol stammen von Googles öffentlichem Markenserver; es wird kein externes Bewertungs-Widget oder Tracking-Skript geladen. Datenstand und Quellenlink bleiben sichtbar.
+
