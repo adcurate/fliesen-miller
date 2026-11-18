@@ -64,6 +64,8 @@ Die neue Site wird zunächst privat bereitgestellt. `robots.txt` und Metadaten v
 
 Die Hauptdomain wird nach erfolgreichem Worker-Deployment in Cloudflare am Worker unter **Settings → Domains & Routes → Add → Custom Domain** verbunden. Die one.com-Mailbox bleibt unverändert. Vor Domain- oder Nameserveränderungen bestehende MX-, SPF- und DKIM-Einträge sichern, damit der E-Mail-Empfang bei one.com nicht unterbrochen wird. Für den Start bleibt `SEO_INDEXING_ENABLED=false`; erst nach Prüfung der öffentlichen Domain wird `SITE_URL=https://fliesen-miller.de` gesetzt und die Indexierung aktiviert.
 
+Die aktuellen, öffentlich sichtbaren one.com-Mail-Einträge und die DNS-Übergabe sind in [`DNS-Übergabe.md`](./DNS-Übergabe.md) dokumentiert. Die vollständige Zone muss vor dem Wechsel zusätzlich im one.com Control Panel gesichert werden.
+
 ## Seitenadressen und SEO
 
 `content/seo-pages.json` definiert 17 öffentliche Inhaltsseiten mit eindeutigen Titeln und Beschreibungen. Premium, Referenzen, Kontakt, Anfrage, FAQ und die Einsatzgebietsübersicht haben direkte URLs. Die vier regionalen Adressen bleiben erhalten. Abschnittsanker dienen weiterhin als Sprungmarken innerhalb einer Seite. Canonicals und Social-Media-URLs werden zentral über `lib/seo.ts` erzeugt; die Sitemap enthält 14 für die Suche vorgesehene Seiten und keine rechtlichen Seiten.
